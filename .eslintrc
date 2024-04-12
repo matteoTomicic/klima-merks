@@ -11,6 +11,7 @@
 		"project": "./tsconfig.json"
 	},
 	"rules": {
-		"perfectionist/sort-interfaces": "error"
+		"perfectionist/sort-interfaces": "error",
+		"react/react-in-jsx-scope": "off"
 	}
 }
