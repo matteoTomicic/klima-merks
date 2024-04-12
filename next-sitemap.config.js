@@ -2,7 +2,7 @@
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-	siteUrl: "https://example.com",
+	siteUrl: "https://klima-merks.hr",
 	generateRobotsTxt: true // (optional)
 	// ...other options
 };
