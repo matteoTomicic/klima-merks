@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://klima-merks.hr
+
+# Sitemaps
+Sitemap: https://klima-merks.hr/sitemap.xml
