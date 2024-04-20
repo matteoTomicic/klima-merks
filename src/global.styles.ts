@@ -18,9 +18,18 @@ export default styled.createGlobalStyle`
 
 	body {
 		min-height: 100vh;
-		/* font-family: font family here...; */
+		font-family: ${({ theme }) => theme.fonts.default};
 		font-weight: 400;
 		font-size: 1.6rem;
+		background-color: gray;
+	}
+
+	header {
+		height: 6.8rem;
+
+		${({ theme }) => theme.device.LG} {
+			height: 7.5rem;
+		}
 	}
 
 	ol,

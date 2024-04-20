@@ -1,11 +1,16 @@
 import { GetStaticPropsContext } from "next";
 
+import PageLayout from "../src/components/PageLayout/PageLayout";
 import { ContentType, IPageProps } from "../src/content/Home/Home.types";
 
 export default function Home(pageProps: IPageProps) {
-	const { Hello } = pageProps;
+	const { Metadata } = pageProps;
 
-	return <div>{Hello}</div>;
+	return (
+		<PageLayout description={Metadata.Description} keywords={Metadata.Keywords} title={Metadata.Title} url={Metadata.Url}>
+			Body content goes here...
+		</PageLayout>
+	);
 }
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {

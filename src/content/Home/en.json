@@ -1,11 +1,8 @@
 {
-	"Hello": "Hello",
-	"Array": [
-		{
-			"Title": "Title"
-		},
-		{
-			"Subtitle": "Subtitle"
-		}
-	]
+	"Metadata": {
+		"Description": "Discover top-quality heating and cooling solutions with Klima Merks. As authorized Vaillant partners and service providers since 1990, we offer installation and maintenance services tailored to your needs.",
+		"Keywords": "Klima Merks, heating, cooling, Vaillant partners, installation, maintenance, HVAC solutions",
+		"Title": "Klima Merks | Authorized Vaillant partner",
+		"Url": "/"
+	}
 }

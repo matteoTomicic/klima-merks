@@ -1,11 +1,8 @@
 {
-	"Hello": "Pozdrav!",
-	"Array": [
-		{
-			"Title": "Naslov"
-		},
-		{
-			"Subtitle": "Podnaslov"
-		}
-	]
+	"Metadata": {
+		"Description": "Otkrijte vrhunska rješenja za grijanje i hlađenje s Klima Merksom. Kao ovlašteni partneri i serviseri Vaillanta od 1990. godine, nudimo usluge ugradnje i održavanja prilagođene vašim potrebama.",
+		"Keywords": "Klima Merks, grijanje, hlađenje, partneri Vaillanta, ugradnja, održavanje, HVAC rješenja",
+		"Title": "Klima Merks | Ovlašteni Vaillant partner",
+		"Url": "/"
+	}
 }
