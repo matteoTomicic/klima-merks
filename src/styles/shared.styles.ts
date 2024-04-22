@@ -1,12 +1,40 @@
-/* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
+
+import { colors, device } from "../global.styles";
+
+export const Container = styled.div`
+	width: calc(100% - 3.2rem);
+	margin-left: auto;
+	margin-right: auto;
+
+	${device.up.MOBILE_LANDSCAPE} {
+		max-width: 54rem;
+		width: 100%;
+	}
+
+	${device.up.TABLET} {
+		max-width: 72rem;
+	}
+
+	${device.up.LAPTOP} {
+		max-width: 96rem;
+	}
+
+	${device.up.DT_XL} {
+		max-width: 114rem;
+	}
+
+	${device.up.DT_XXL} {
+		max-width: 132rem;
+	}
+`;
 
 export const PRegular = styled.p`
 	font-size: 1.4rem;
 	line-height: 2rem;
-	color: ${({ theme }) => theme.colors.text.primary};
+	color: ${colors.text.primary};
 
-	${({ theme }) => theme.device.LG} {
+	${device.up.LAPTOP} {
 		font-size: 1.6rem;
 		line-height: 2.4rem;
 	}

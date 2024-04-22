@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { HamburgerMenuStyled, MenuIcon, MenuLineBottom, MenuLineTop, MenuLinesWrapper } from "./HamburgerMenu.styles";
+import { HamburgerMenuStyled, MenuIcon, MenuLineBottom, MenuLineTop, MenuLinesWrapper } from "./styles";
 
 interface IHamburgerMenu {
 	closeHamburger: boolean;

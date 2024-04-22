@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import Container from "../Container/Container";
+import { colors, device, mixins } from "../../../global.styles";
+import { Container } from "../../../styles/shared.styles";
 
 interface INavigationItem {
 	$currentPage: boolean;
@@ -13,8 +14,8 @@ export const ContainerStyled = styled(Container)`
 `;
 
 export const NavigationStyled = styled.nav`
-	background-color: ${({ theme }) => theme.colors.neutral};
-	padding: ${({ theme }) => theme.spacing(4)} 0;
+	background-color: ${colors.neutral};
+	padding: ${mixins.spacing(4)} 0;
 	z-index: 9999;
 	position: fixed;
 	width: 100%;
@@ -22,7 +23,7 @@ export const NavigationStyled = styled.nav`
 
 export const LogoWrapper = styled.div`
 	img {
-		${({ theme }) => theme.device.LG} {
+		${device.up.LAPTOP} {
 			width: 18rem;
 		}
 	}
@@ -34,7 +35,7 @@ export const NavigationItems = styled.div`
 	margin: 0;
 	overflow: hidden;
 	transition: 0.3s all ease-in-out;
-	background-color: ${({ theme }) => theme.colors.neutral};
+	background-color: ${colors.neutral};
 	position: absolute;
 	top: 6.8rem;
 	left: 0;
@@ -47,7 +48,7 @@ export const NavigationItems = styled.div`
 		height: 31rem;
 	}
 
-	${({ theme }) => theme.device.LG} {
+	${device.up.LAPTOP} {
 		height: auto;
 		width: auto;
 		margin-left: auto;
@@ -61,24 +62,24 @@ export const NavigationItemsList = styled.ul`
 	flex-direction: column;
 	align-items: center;
 	height: 100%;
-	gap: ${({ theme }) => theme.spacing(5)};
+	gap: ${mixins.spacing(5)};
 
-	${({ theme }) => theme.device.LG} {
+	${device.up.LAPTOP} {
 		flex-direction: row;
-		gap: ${({ theme }) => theme.spacing(5)};
+		gap: ${mixins.spacing(5)};
 	}
 
-	${({ theme }) => theme.device.XL} {
-		gap: ${({ theme }) => theme.spacing(7)};
+	${device.up.DT_XL} {
+		gap: ${mixins.spacing(7)};
 	}
 
 	> div {
-		${({ theme }) => theme.device.LG} {
-			margin-left: ${({ theme }) => theme.spacing(2)};
+		${device.up.LAPTOP} {
+			margin-left: ${mixins.spacing(2)};
 		}
 
-		${({ theme }) => theme.device.XL} {
-			margin-left: ${({ theme }) => theme.spacing(4)};
+		${device.up.DT_XL} {
+			margin-left: ${mixins.spacing(4)};
 		}
 	}
 `;
@@ -94,14 +95,14 @@ export const NavigationItem = styled.span<INavigationItem>`
 		bottom: -0.2rem;
 		width: ${({ $currentPage }) => ($currentPage ? "100%" : "0")};
 		height: 0.1rem;
-		background-color: ${({ theme }) => theme.colors.primary};
+		background-color: ${colors.primary};
 
-		${({ theme }) => theme.device.LG} {
+		${device.up.LAPTOP} {
 			left: 0;
 			width: 100%;
 			height: 100%;
 			background-color: transparent;
-			border-bottom: ${({ theme }) => `0.2rem solid ${theme.colors.primary}`};
+			border-bottom: 0.2rem solid ${colors.primary};
 			transform: ${({ $currentPage }) =>
 				$currentPage ? `scale(1) translateX(0) translateY(0)` : `scale(0) translateX(0) translateY(5rem)`};
 			transition: all 0.25s ease-in-out;
@@ -111,12 +112,12 @@ export const NavigationItem = styled.span<INavigationItem>`
 
 	&:hover {
 		a {
-			${({ theme }) => theme.device.LG} {
-				color: ${({ theme }) => theme.colors.primary};
+			${device.up.LAPTOP} {
+				color: ${colors.primary};
 			}
 		}
 
-		${({ theme }) => theme.device.LG} {
+		${device.up.LAPTOP} {
 			&:after {
 				transform: scale(1) translateX(0) translateY(0);
 				opacity: 1;
@@ -129,12 +130,12 @@ export const NavigationItem = styled.span<INavigationItem>`
 		line-height: 2.4rem;
 		font-weight: 600;
 		text-decoration: none;
-		color: ${({ $currentPage, theme }) => ($currentPage ? theme.colors.primary : theme.colors.text.disabled)};
+		color: ${({ $currentPage }) => ($currentPage ? colors.primary : colors.text.disabled)};
 		transition: color 0.25s ease-in-out;
 		z-index: 999;
 		position: relative;
 
-		${({ theme }) => theme.device.XL} {
+		${device.up.DT_XL} {
 			font-size: 1.8rem;
 			line-height: 3rem;
 		}

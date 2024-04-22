@@ -1,7 +1,7 @@
 import { GetStaticPropsContext } from "next";
 
-import PageLayout from "../src/components/PageLayout/PageLayout";
-import { ContentType, IPageProps } from "../src/content/Home/Home.types";
+import PageLayout from "../src/components/PageLayout";
+import { ContentType, IPageProps } from "../src/content/Home/types";
 
 export default function Home(pageProps: IPageProps) {
 	const { Metadata } = pageProps;

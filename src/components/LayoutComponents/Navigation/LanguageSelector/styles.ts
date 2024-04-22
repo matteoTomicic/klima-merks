@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { colors, device, mixins } from "../../../../global.styles";
 import { PRegular } from "../../../../styles/shared.styles";
 
 interface ISelectedLanguageImageWrapper {
@@ -7,7 +8,7 @@ interface ISelectedLanguageImageWrapper {
 }
 
 export const LanguageSelectorStyled = styled.div`
-	${({ theme }) => theme.device.LG} {
+	${device.up.LAPTOP} {
 		position: relative;
 	}
 `;
@@ -16,12 +17,12 @@ export const SelectedLanguageImageWrapper = styled.div<ISelectedLanguageImageWra
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
-	gap: ${({ theme }) => theme.spacing(1)};
+	gap: ${mixins.spacing(1)};
 
 	svg {
-		color: ${({ theme }) => theme.colors.dark};
+		color: ${colors.dark};
 
-		${({ theme }) => theme.device.LG} {
+		${device.up.LAPTOP} {
 			transform: ${({ $isLanguagesDropdownOpen }) => ($isLanguagesDropdownOpen ? "rotateX(0)" : "rotateX(180deg)")};
 			transition: 0.25s transform ease-in-out;
 		}
@@ -31,8 +32,8 @@ export const SelectedLanguageImageWrapper = styled.div<ISelectedLanguageImageWra
 export const LanguageName = styled.span`
 	font-size: 1.4rem;
 	font-weight: 600;
-	color: ${({ theme }) => theme.colors.primary};
-	margin-left: ${({ theme }) => theme.spacing(2)};
+	color: ${colors.primary};
+	margin-left: ${mixins.spacing(2)};
 `;
 
 export const LanguagesDropdown = styled.div`
@@ -41,24 +42,24 @@ export const LanguagesDropdown = styled.div`
 	left: 0;
 	width: 100%;
 	height: 0;
-	background-color: ${({ theme }) => theme.colors.neutral};
+	background-color: ${colors.neutral};
 	z-index: 999;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: ${({ theme }) => theme.spacing(4)};
+	gap: ${mixins.spacing(4)};
 	overflow: hidden;
 	transition: 0.25s height ease-in-out;
 
-	${({ theme }) => theme.device.LG} {
+	${device.up.LAPTOP} {
 		left: unset;
 		right: 0;
 		bottom: unset;
 		top: 5.2rem;
 		width: auto;
-		gap: ${({ theme }) => theme.spacing(2)};
-		padding: ${({ theme }) => `${theme.spacing(0)} ${theme.spacing(4)}`};
+		gap: ${mixins.spacing(2)};
+		padding: ${`${mixins.spacing(0)} ${mixins.spacing(4)}`};
 		border-bottom-right-radius: 1rem;
 		border-bottom-left-radius: 1rem;
 		transition: 0.25s all ease-in-out;
@@ -67,8 +68,8 @@ export const LanguagesDropdown = styled.div`
 	&.opened {
 		height: 31rem;
 
-		${({ theme }) => theme.device.LG} {
-			padding: ${({ theme }) => theme.spacing(4)};
+		${device.up.LAPTOP} {
+			padding: ${mixins.spacing(4)};
 			height: 16.2rem;
 		}
 	}
@@ -76,7 +77,7 @@ export const LanguagesDropdown = styled.div`
 	${PRegular} {
 		font-weight: 600;
 
-		${({ theme }) => theme.device.LG} {
+		${device.up.LAPTOP} {
 			display: none;
 		}
 	}
@@ -84,24 +85,24 @@ export const LanguagesDropdown = styled.div`
 
 export const Flag = styled.div`
 	position: relative;
-	padding: ${({ theme }) => `${theme.spacing(1)} ${theme.spacing(2)} ${theme.spacing(1)} ${theme.spacing(1)}`};
+	padding: ${`${mixins.spacing(1)} ${mixins.spacing(2)} ${mixins.spacing(1)} ${mixins.spacing(1)}`};
 	display: flex;
 	align-items: center;
 	border-radius: 2rem;
 	transition: 0.25s all ease-in-out;
 
-	${({ theme }) => theme.device.LG} {
+	${device.up.LAPTOP} {
 		min-width: 13.4rem;
 	}
 
 	&:hover {
-		${({ theme }) => theme.device.LG} {
+		${device.up.LAPTOP} {
 			background-color: rgba(0, 145, 126, 0.2);
 		}
 
 		a span {
-			${({ theme }) => theme.device.LG} {
-				color: ${({ theme }) => theme.colors.primary};
+			${device.up.LAPTOP} {
+				color: ${colors.primary};
 			}
 		}
 	}
@@ -112,7 +113,7 @@ export const Flag = styled.div`
 		align-items: center;
 
 		span {
-			color: ${({ theme }) => theme.colors.text.disabled};
+			color: ${colors.text.disabled};
 		}
 	}
 
@@ -120,12 +121,12 @@ export const Flag = styled.div`
 		background-color: rgba(0, 145, 126, 0.2);
 
 		a span {
-			color: ${({ theme }) => theme.colors.primary};
+			color: ${colors.primary};
 		}
 
 		.checkmark {
-			margin-left: ${({ theme }) => theme.spacing(2)};
-			color: ${({ theme }) => theme.colors.primary};
+			margin-left: ${mixins.spacing(2)};
+			color: ${colors.primary};
 		}
 	}
 `;
@@ -133,14 +134,14 @@ export const Flag = styled.div`
 export const GoBackMenu = styled.div`
 	display: flex;
 	align-items: center;
-	gap: ${({ theme }) => theme.spacing(2)};
+	gap: ${mixins.spacing(2)};
 	cursor: pointer;
-	margin-top: ${({ theme }) => theme.spacing(6)};
-	padding: ${({ theme }) => theme.spacing(2)};
+	margin-top: ${mixins.spacing(6)};
+	padding: ${mixins.spacing(2)};
 	background-color: rgba(0, 145, 126, 0.2);
 	border-radius: 1rem;
 
-	${({ theme }) => theme.device.LG} {
+	${device.up.LAPTOP} {
 		display: none;
 	}
 
@@ -150,6 +151,6 @@ export const GoBackMenu = styled.div`
 	}
 
 	svg {
-		color: ${({ theme }) => theme.colors.text.primary};
+		color: ${colors.text.primary};
 	}
 `;
