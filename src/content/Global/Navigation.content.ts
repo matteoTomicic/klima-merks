@@ -1,33 +1,33 @@
-import Paths from "../../constants/paths.constants";
+import Routes from "../../constants/routes.constants";
 
 export const navigationItemsHr = [
 	{
-		href: Paths.HOME,
+		href: Routes.HOME,
 		key: 0,
 		label: "Početna"
 	},
 	{
-		href: Paths.SERVICES,
+		href: Routes.SERVICES,
 		key: 1,
 		label: "Usluge"
 	},
 	{
-		href: Paths.OUR_WORKS,
+		href: Routes.OUR_WORKS,
 		key: 2,
 		label: "Naši radovi"
 	},
 	{
-		href: Paths.PRICE_LIST,
+		href: Routes.PRICE_LIST,
 		key: 3,
 		label: "Cjenik"
 	},
 	{
-		href: Paths.ABOUT_US,
+		href: Routes.ABOUT_US,
 		key: 4,
 		label: "O nama"
 	},
 	{
-		href: Paths.CONTACT,
+		href: Routes.CONTACT,
 		key: 5,
 		label: "Kontakt"
 	}
@@ -35,32 +35,32 @@ export const navigationItemsHr = [
 
 export const navigationItemsEn = [
 	{
-		href: Paths.HOME,
+		href: Routes.HOME,
 		key: 0,
 		label: "Home"
 	},
 	{
-		href: Paths.SERVICES,
+		href: Routes.SERVICES,
 		key: 1,
 		label: "Services"
 	},
 	{
-		href: Paths.OUR_WORKS,
+		href: Routes.OUR_WORKS,
 		key: 2,
 		label: "Our Works"
 	},
 	{
-		href: Paths.PRICE_LIST,
+		href: Routes.PRICE_LIST,
 		key: 3,
 		label: "Price list"
 	},
 	{
-		href: Paths.ABOUT_US,
+		href: Routes.ABOUT_US,
 		key: 4,
 		label: "About Us"
 	},
 	{
-		href: Paths.CONTACT,
+		href: Routes.CONTACT,
 		key: 5,
 		label: "Contact"
 	}
@@ -68,32 +68,32 @@ export const navigationItemsEn = [
 
 export const navigationItemsIt = [
 	{
-		href: Paths.HOME,
+		href: Routes.HOME,
 		key: 0,
 		label: "Home"
 	},
 	{
-		href: Paths.SERVICES,
+		href: Routes.SERVICES,
 		key: 1,
 		label: "Servizi"
 	},
 	{
-		href: Paths.OUR_WORKS,
+		href: Routes.OUR_WORKS,
 		key: 2,
 		label: "I nostri lavori"
 	},
 	{
-		href: Paths.PRICE_LIST,
+		href: Routes.PRICE_LIST,
 		key: 3,
 		label: "Listino prezzi"
 	},
 	{
-		href: Paths.ABOUT_US,
+		href: Routes.ABOUT_US,
 		key: 4,
 		label: "Chi siamo"
 	},
 	{
-		href: Paths.CONTACT,
+		href: Routes.CONTACT,
 		key: 5,
 		label: "Contatto"
 	}

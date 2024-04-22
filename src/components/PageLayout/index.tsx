@@ -9,7 +9,7 @@ import {
 	languageSelectorIt
 } from "../../content/Global/LanguageSelector.content";
 import { navigationItemsEn, navigationItemsHr, navigationItemsIt } from "../../content/Global/Navigation.content";
-import Navigation from "../LayoutComponents/Navigation/Navigation";
+import Navigation from "../LayoutComponents/Navigation";
 
 export interface IPageLayout extends PropsWithChildren {
 	description: string;

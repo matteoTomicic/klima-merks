@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
-import LanguageSelector, { ILanguageSelectorItem } from "./LanguageSelector/LanguageSelector";
+import HamburgerMenu from "./HamburgerMenu";
+import LanguageSelector, { ILanguageSelectorItem } from "./LanguageSelector";
 import {
 	ContainerStyled,
 	LogoWrapper,
@@ -12,7 +12,7 @@ import {
 	NavigationItems,
 	NavigationItemsList,
 	NavigationStyled
-} from "./Navigation.styles";
+} from "./styles";
 
 interface INavigationItem {
 	href: string;

@@ -1,4 +1,4 @@
-enum Paths {
+enum Routes {
 	ABOUT_US = "/about-us",
 	CONTACT = "/contact",
 	HOME = "/",
@@ -7,4 +7,4 @@ enum Paths {
 	SERVICES = "/services"
 }
 
-export default Paths;
+export default Routes;

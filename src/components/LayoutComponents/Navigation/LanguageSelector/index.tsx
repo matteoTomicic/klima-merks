@@ -14,7 +14,7 @@ import {
 	LanguageSelectorStyled,
 	LanguagesDropdown,
 	SelectedLanguageImageWrapper
-} from "./LanguageSelector.styles";
+} from "./styles";
 
 export interface ILanguageSelectorItem {
 	flag: {

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { colors, device } from "../../../../global.styles";
+
 interface IMenuLine {
 	$active: boolean;
 }
@@ -10,7 +12,7 @@ export const HamburgerMenuStyled = styled.div`
 	height: 2.8rem;
 	cursor: pointer;
 
-	${({ theme }) => theme.device.LG} {
+	${device.up.LAPTOP} {
 		display: none;
 	}
 `;
@@ -42,7 +44,7 @@ const MenuLine = styled.span<IMenuLine>`
 	position: absolute;
 	display: block;
 	height: 0.4rem;
-	background-color: ${({ theme }) => theme.colors.dark};
+	background-color: ${colors.dark};
 	border-radius: 0.2rem;
 	transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
 `;
