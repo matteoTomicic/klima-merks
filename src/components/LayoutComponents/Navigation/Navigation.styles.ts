@@ -44,7 +44,7 @@ export const NavigationItems = styled.div`
 	flex-direction: column;
 
 	&.shown {
-		height: 31.8rem;
+		height: 31rem;
 	}
 
 	${({ theme }) => theme.device.LG} {

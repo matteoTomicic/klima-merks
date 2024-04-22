@@ -3,8 +3,12 @@ import { useRouter } from "next/router";
 import { PropsWithChildren } from "react";
 
 import { WEBSITE_URL } from "../../constants/general.constants";
-import { languageSelectorEn, languageSelectorHr } from "../../content/Global/LanguageSelector.content";
-import { navigationItemsEn, navigationItemsHr } from "../../content/Global/Navigation.content";
+import {
+	languageSelectorEn,
+	languageSelectorHr,
+	languageSelectorIt
+} from "../../content/Global/LanguageSelector.content";
+import { navigationItemsEn, navigationItemsHr, navigationItemsIt } from "../../content/Global/Navigation.content";
 import Navigation from "../LayoutComponents/Navigation/Navigation";
 
 export interface IPageLayout extends PropsWithChildren {
@@ -16,6 +20,38 @@ export interface IPageLayout extends PropsWithChildren {
 
 function PageLayout({ children, description, keywords, title, url }: IPageLayout) {
 	const { locale } = useRouter();
+
+	const selectLanguage = (language: string | undefined) => {
+		let navigationItems;
+		let languageSelectorItems;
+		let languageSelectorTitle;
+		let languageSelectorGoBackButtonText;
+
+		switch (language) {
+			case "en":
+				navigationItems = navigationItemsEn;
+				languageSelectorItems = languageSelectorEn.languageSelectorItems;
+				languageSelectorTitle = languageSelectorEn.languageSelectorTitle;
+				languageSelectorGoBackButtonText = languageSelectorEn.languageSelectorGoBackButtonText;
+				break;
+
+			case "it":
+				navigationItems = navigationItemsIt;
+				languageSelectorItems = languageSelectorIt.languageSelectorItems;
+				languageSelectorTitle = languageSelectorIt.languageSelectorTitle;
+				languageSelectorGoBackButtonText = languageSelectorIt.languageSelectorGoBackButtonText;
+				break;
+
+			default:
+				navigationItems = navigationItemsHr;
+				languageSelectorItems = languageSelectorHr.languageSelectorItems;
+				languageSelectorTitle = languageSelectorHr.languageSelectorTitle;
+				languageSelectorGoBackButtonText = languageSelectorHr.languageSelectorGoBackButtonText;
+				break;
+		}
+
+		return { languageSelectorGoBackButtonText, languageSelectorItems, languageSelectorTitle, navigationItems };
+	};
 
 	return (
 		<>
@@ -33,8 +69,10 @@ function PageLayout({ children, description, keywords, title, url }: IPageLayout
 			</Head>
 			<header id="header">
 				<Navigation
-					languageSelectorItems={locale === "hr" ? languageSelectorHr : languageSelectorEn}
-					navigationItems={locale === "hr" ? navigationItemsHr : navigationItemsEn}
+					languageSelectorGoBackButtonText={selectLanguage(locale).languageSelectorGoBackButtonText}
+					languageSelectorItems={selectLanguage(locale).languageSelectorItems}
+					languageSelectorTitle={selectLanguage(locale).languageSelectorTitle}
+					navigationItems={selectLanguage(locale).navigationItems}
 				/>
 			</header>
 			<main>{children}</main>
