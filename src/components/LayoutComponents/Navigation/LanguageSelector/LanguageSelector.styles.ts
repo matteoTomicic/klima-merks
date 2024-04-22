@@ -98,16 +98,30 @@ export const Flag = styled.div`
 		${({ theme }) => theme.device.LG} {
 			background-color: rgba(0, 145, 126, 0.2);
 		}
+
+		a span {
+			${({ theme }) => theme.device.LG} {
+				color: ${({ theme }) => theme.colors.primary};
+			}
+		}
 	}
 
 	a {
 		text-decoration: none;
 		display: flex;
 		align-items: center;
+
+		span {
+			color: ${({ theme }) => theme.colors.text.disabled};
+		}
 	}
 
 	&.selected-language {
 		background-color: rgba(0, 145, 126, 0.2);
+
+		a span {
+			color: ${({ theme }) => theme.colors.primary};
+		}
 
 		.checkmark {
 			margin-left: ${({ theme }) => theme.spacing(2)};
@@ -132,6 +146,7 @@ export const GoBackMenu = styled.div`
 
 	${PRegular} {
 		text-transform: uppercase;
+		font-weight: normal;
 	}
 
 	svg {
