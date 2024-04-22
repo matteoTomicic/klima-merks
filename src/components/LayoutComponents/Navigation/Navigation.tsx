@@ -21,11 +21,18 @@ interface INavigationItem {
 }
 
 interface INavigation {
+	languageSelectorGoBackButtonText: string;
 	languageSelectorItems: ILanguageSelectorItem[];
+	languageSelectorTitle: string;
 	navigationItems: INavigationItem[];
 }
 
-export default function Navigation({ languageSelectorItems, navigationItems }: INavigation) {
+export default function Navigation({
+	languageSelectorGoBackButtonText,
+	languageSelectorItems,
+	languageSelectorTitle,
+	navigationItems
+}: INavigation) {
 	const [toggleNavigation, setToggleNavigation] = useState(false);
 	const { locale, pathname } = useRouter();
 
@@ -54,7 +61,13 @@ export default function Navigation({ languageSelectorItems, navigationItems }: I
 							);
 						})}
 
-						<LanguageSelector languageSelectorItems={languageSelectorItems} linkTo={pathname} locale={locale} />
+						<LanguageSelector
+							languageSelectorGoBackButtonText={languageSelectorGoBackButtonText}
+							languageSelectorItems={languageSelectorItems}
+							languageSelectorTitle={languageSelectorTitle}
+							linkTo={pathname}
+							locale={locale}
+						/>
 					</NavigationItemsList>
 				</NavigationItems>
 			</ContainerStyled>

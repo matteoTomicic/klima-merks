@@ -1,41 +1,109 @@
-export const languageSelectorHr = [
-	{
-		flag: {
-			alt: "Hrvatska zastava",
-			src: "/images/language-selector/croatia-flag-circle.png"
+export const languageSelectorHr = {
+	languageSelectorGoBackButtonText: "Natrag",
+	languageSelectorItems: [
+		{
+			flag: {
+				alt: "Hrvatska zastava",
+				src: "/images/language-selector/croatia-flag-circle.png"
+			},
+			key: 0,
+			label: "Hrvatski",
+			locale: "hr"
 		},
-		key: 1,
-		label: "Hrvatski",
-		locale: "hr"
-	},
-	{
-		flag: {
-			alt: "UK zastava",
-			src: "/images/language-selector/uk-flag-circle.png"
+		{
+			flag: {
+				alt: "UK zastava",
+				src: "/images/language-selector/uk-flag-circle.png"
+			},
+			key: 1,
+			label: "Engleski",
+			locale: "en",
+			selectedLanguageImageAltText: "UK zastava"
 		},
-		key: 0,
-		label: "Engleski",
-		locale: "en"
-	}
-];
+		{
+			flag: {
+				alt: "Talijanska zastava",
+				src: "/images/language-selector/italy-flag-circle.png"
+			},
+			key: 2,
+			label: "Talijanski",
+			locale: "it",
+			selectedLanguageImageAltText: "Talijanska zastava"
+		}
+	],
+	languageSelectorTitle: "Izaberite jezik:"
+};
 
-export const languageSelectorEn = [
-	{
-		flag: {
-			alt: "Croatian flag",
-			src: "/images/language-selector/croatia-flag-circle.png"
+export const languageSelectorEn = {
+	languageSelectorGoBackButtonText: "Back",
+	languageSelectorItems: [
+		{
+			flag: {
+				alt: "Croatian flag",
+				src: "/images/language-selector/croatia-flag-circle.png"
+			},
+			key: 0,
+			label: "Croatian",
+			locale: "hr",
+			selectedLanguageImageAltText: "Croatian flag"
 		},
-		key: 1,
-		label: "Croatian",
-		locale: "hr"
-	},
-	{
-		flag: {
-			alt: "UK flag",
-			src: "/images/language-selector/uk-flag-circle.png"
+		{
+			flag: {
+				alt: "UK flag",
+				src: "/images/language-selector/uk-flag-circle.png"
+			},
+			key: 1,
+			label: "English",
+			locale: "en",
+			selectedLanguageImageAltText: "UK flag"
 		},
-		key: 0,
-		label: "English",
-		locale: "en"
-	}
-];
+		{
+			flag: {
+				alt: "Italian flag",
+				src: "/images/language-selector/italy-flag-circle.png"
+			},
+			key: 2,
+			label: "Italian",
+			locale: "it",
+			selectedLanguageImageAltText: "Italian flag"
+		}
+	],
+	languageSelectorTitle: "Choose your language:"
+};
+
+export const languageSelectorIt = {
+	languageSelectorGoBackButtonText: "Indietro",
+	languageSelectorItems: [
+		{
+			flag: {
+				alt: "Bandiera Croata",
+				src: "/images/language-selector/croatia-flag-circle.png"
+			},
+			key: 0,
+			label: "Croato",
+			locale: "hr",
+			selectedLanguageImageAltText: "Bandiera Croatia"
+		},
+		{
+			flag: {
+				alt: "Bandiera del Regno Unito",
+				src: "/images/language-selector/uk-flag-circle.png"
+			},
+			key: 1,
+			label: "Inglese",
+			locale: "en",
+			selectedLanguageImageAltText: "Bandiera del Regno Unito"
+		},
+		{
+			flag: {
+				alt: "Bandiera Italiana",
+				src: "/images/language-selector/italy-flag-circle.png"
+			},
+			key: 2,
+			label: "Italiano",
+			locale: "it",
+			selectedLanguageImageAltText: "Bandiera Italiana"
+		}
+	],
+	languageSelectorTitle: "Scegli la tua lingua:"
+};

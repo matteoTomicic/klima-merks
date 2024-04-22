@@ -1,11 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { BsArrowBarDown } from "react-icons/bs";
+import { IoIosArrowUp } from "react-icons/io";
 import { IoCheckmark } from "react-icons/io5";
 import { useOutsideClickRef } from "rooks";
 
-import { Flag, LanguageName, LanguagesDropdown, SelectedLanguageImageWrapper } from "./LanguageSelector.styles";
+import { PRegular } from "../../../../styles/shared.styles";
+import {
+	Flag,
+	GoBackMenu,
+	LanguageName,
+	LanguageSelectorStyled,
+	LanguagesDropdown,
+	SelectedLanguageImageWrapper
+} from "./LanguageSelector.styles";
 
 export interface ILanguageSelectorItem {
 	flag: {
@@ -18,12 +27,20 @@ export interface ILanguageSelectorItem {
 }
 
 interface ILanguageSelector {
+	languageSelectorGoBackButtonText: string;
 	languageSelectorItems: ILanguageSelectorItem[];
+	languageSelectorTitle: string;
 	linkTo: string;
 	locale?: string;
 }
 
-export default function LanguageSelector({ languageSelectorItems, linkTo, locale }: ILanguageSelector) {
+export default function LanguageSelector({
+	languageSelectorGoBackButtonText,
+	languageSelectorItems,
+	languageSelectorTitle,
+	linkTo,
+	locale
+}: ILanguageSelector) {
 	const [isLanguagesDropdownOpen, setIsLanguagesDropdownOpen] = useState(false);
 
 	const handleLanguagesDropdownOpening = () => {
@@ -36,22 +53,48 @@ export default function LanguageSelector({ languageSelectorItems, linkTo, locale
 
 	const [selectedLanguageWrapperRef] = useOutsideClickRef(closeLanguageDropdown);
 
+	const selectLanguage = (language: string | undefined) => {
+		let selectedLanguageImageAltText;
+		let selectedLanguageFlagImageSrc;
+
+		switch (language) {
+			case "en":
+				selectedLanguageImageAltText = "UK Flag";
+				selectedLanguageFlagImageSrc = "/images/language-selector/uk-flag-circle.png";
+				break;
+
+			case "it":
+				selectedLanguageImageAltText = "Bandiera Italiana";
+				selectedLanguageFlagImageSrc = "/images/language-selector/italy-flag-circle.png";
+				break;
+
+			default:
+				selectedLanguageImageAltText = "Hrvatska zastava";
+				selectedLanguageFlagImageSrc = "/images/language-selector/croatia-flag-circle.png";
+				break;
+		}
+
+		return { selectedLanguageFlagImageSrc, selectedLanguageImageAltText };
+	};
+
 	return (
-		<div style={{ position: "relative" }}>
-			<SelectedLanguageImageWrapper onClick={handleLanguagesDropdownOpening} ref={selectedLanguageWrapperRef}>
+		<LanguageSelectorStyled>
+			<SelectedLanguageImageWrapper
+				$isLanguagesDropdownOpen={isLanguagesDropdownOpen}
+				onClick={handleLanguagesDropdownOpening}
+				ref={selectedLanguageWrapperRef}
+			>
 				<Image
-					alt={locale === "hr" ? "Hrvatska zastava" : "UK flag"}
+					alt={selectLanguage(locale).selectedLanguageImageAltText}
 					height={30}
-					src={
-						locale === "hr"
-							? "/images/language-selector/croatia-flag-circle.png"
-							: "/images/language-selector/uk-flag-circle.png"
-					}
+					priority
+					src={selectLanguage(locale).selectedLanguageFlagImageSrc}
 					width={30}
 				/>
-				{isLanguagesDropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+				<IoIosArrowUp />
 			</SelectedLanguageImageWrapper>
 			<LanguagesDropdown className={isLanguagesDropdownOpen ? "opened" : undefined}>
+				<PRegular>{languageSelectorTitle}</PRegular>
 				{languageSelectorItems.map((item) => (
 					<Flag className={locale === item.locale ? "selected-language" : undefined} key={item.key}>
 						<Link href={linkTo} locale={item.locale}>
@@ -61,7 +104,11 @@ export default function LanguageSelector({ languageSelectorItems, linkTo, locale
 						{locale === item.locale ? <IoCheckmark className="checkmark" /> : null}
 					</Flag>
 				))}
+				<GoBackMenu>
+					<PRegular>{languageSelectorGoBackButtonText}</PRegular>
+					<BsArrowBarDown />
+				</GoBackMenu>
 			</LanguagesDropdown>
-		</div>
+		</LanguageSelectorStyled>
 	);
 }

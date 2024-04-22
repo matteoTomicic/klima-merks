@@ -65,3 +65,36 @@ export const navigationItemsEn = [
 		label: "Contact"
 	}
 ];
+
+export const navigationItemsIt = [
+	{
+		href: Paths.HOME,
+		key: 0,
+		label: "Home"
+	},
+	{
+		href: Paths.SERVICES,
+		key: 1,
+		label: "Servizi"
+	},
+	{
+		href: Paths.OUR_WORKS,
+		key: 2,
+		label: "I nostri lavori"
+	},
+	{
+		href: Paths.PRICE_LIST,
+		key: 3,
+		label: "Listino prezzi"
+	},
+	{
+		href: Paths.ABOUT_US,
+		key: 4,
+		label: "Chi siamo"
+	},
+	{
+		href: Paths.CONTACT,
+		key: 5,
+		label: "Contatto"
+	}
+];
