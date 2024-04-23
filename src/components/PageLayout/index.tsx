@@ -3,13 +3,8 @@ import { useRouter } from "next/router";
 import { PropsWithChildren } from "react";
 
 import { WEBSITE_URL } from "../../constants/general.constants";
-import {
-	languageSelectorEn,
-	languageSelectorHr,
-	languageSelectorIt
-} from "../../content/Global/LanguageSelector.content";
-import { navigationItemsEn, navigationItemsHr, navigationItemsIt } from "../../content/Global/Navigation.content";
 import Navigation from "../LayoutComponents/Navigation";
+import getLayoutComponentsTranslations from "./layoutComponentsTranslations.helper";
 
 export interface IPageLayout extends PropsWithChildren {
 	description: string;
@@ -21,37 +16,7 @@ export interface IPageLayout extends PropsWithChildren {
 function PageLayout({ children, description, keywords, title, url }: IPageLayout) {
 	const { locale } = useRouter();
 
-	const selectLanguage = (language: string | undefined) => {
-		let navigationItems;
-		let languageSelectorItems;
-		let languageSelectorTitle;
-		let languageSelectorGoBackButtonText;
-
-		switch (language) {
-			case "en":
-				navigationItems = navigationItemsEn;
-				languageSelectorItems = languageSelectorEn.languageSelectorItems;
-				languageSelectorTitle = languageSelectorEn.languageSelectorTitle;
-				languageSelectorGoBackButtonText = languageSelectorEn.languageSelectorGoBackButtonText;
-				break;
-
-			case "it":
-				navigationItems = navigationItemsIt;
-				languageSelectorItems = languageSelectorIt.languageSelectorItems;
-				languageSelectorTitle = languageSelectorIt.languageSelectorTitle;
-				languageSelectorGoBackButtonText = languageSelectorIt.languageSelectorGoBackButtonText;
-				break;
-
-			default:
-				navigationItems = navigationItemsHr;
-				languageSelectorItems = languageSelectorHr.languageSelectorItems;
-				languageSelectorTitle = languageSelectorHr.languageSelectorTitle;
-				languageSelectorGoBackButtonText = languageSelectorHr.languageSelectorGoBackButtonText;
-				break;
-		}
-
-		return { languageSelectorGoBackButtonText, languageSelectorItems, languageSelectorTitle, navigationItems };
-	};
+	const layoutComponentsTranslations = getLayoutComponentsTranslations(locale);
 
 	return (
 		<>
@@ -69,10 +34,12 @@ function PageLayout({ children, description, keywords, title, url }: IPageLayout
 			</Head>
 			<header id="header">
 				<Navigation
-					languageSelectorGoBackButtonText={selectLanguage(locale).languageSelectorGoBackButtonText}
-					languageSelectorItems={selectLanguage(locale).languageSelectorItems}
-					languageSelectorTitle={selectLanguage(locale).languageSelectorTitle}
-					navigationItems={selectLanguage(locale).navigationItems}
+					languageSelectorGoBackButtonText={layoutComponentsTranslations.languageSelectorGoBackButtonText}
+					languageSelectorItems={layoutComponentsTranslations.languageSelectorItems}
+					languageSelectorTitle={layoutComponentsTranslations.languageSelectorTitle}
+					logo={layoutComponentsTranslations.logo}
+					navigationItems={layoutComponentsTranslations.navigationItems}
+					selectedLanguageImage={layoutComponentsTranslations.selectedLanguageImage}
 				/>
 			</header>
 			<main>{children}</main>

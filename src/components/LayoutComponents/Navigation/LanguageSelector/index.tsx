@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { BsArrowBarDown } from "react-icons/bs";
@@ -26,12 +26,13 @@ export interface ILanguageSelectorItem {
 	locale: string;
 }
 
-interface ILanguageSelector {
+export interface ILanguageSelector {
 	languageSelectorGoBackButtonText: string;
 	languageSelectorItems: ILanguageSelectorItem[];
 	languageSelectorTitle: string;
 	linkTo: string;
 	locale?: string;
+	selectedLanguageImage: ImageProps;
 }
 
 export default function LanguageSelector({
@@ -39,7 +40,8 @@ export default function LanguageSelector({
 	languageSelectorItems,
 	languageSelectorTitle,
 	linkTo,
-	locale
+	locale,
+	selectedLanguageImage
 }: ILanguageSelector) {
 	const [isLanguagesDropdownOpen, setIsLanguagesDropdownOpen] = useState(false);
 
@@ -53,30 +55,6 @@ export default function LanguageSelector({
 
 	const [selectedLanguageWrapperRef] = useOutsideClickRef(closeLanguageDropdown);
 
-	const selectLanguage = (language: string | undefined) => {
-		let selectedLanguageImageAltText;
-		let selectedLanguageFlagImageSrc;
-
-		switch (language) {
-			case "en":
-				selectedLanguageImageAltText = "UK Flag";
-				selectedLanguageFlagImageSrc = "/images/language-selector/uk-flag-circle.png";
-				break;
-
-			case "it":
-				selectedLanguageImageAltText = "Bandiera Italiana";
-				selectedLanguageFlagImageSrc = "/images/language-selector/italy-flag-circle.png";
-				break;
-
-			default:
-				selectedLanguageImageAltText = "Hrvatska zastava";
-				selectedLanguageFlagImageSrc = "/images/language-selector/croatia-flag-circle.png";
-				break;
-		}
-
-		return { selectedLanguageFlagImageSrc, selectedLanguageImageAltText };
-	};
-
 	return (
 		<LanguageSelectorStyled>
 			<SelectedLanguageImageWrapper
@@ -85,11 +63,11 @@ export default function LanguageSelector({
 				ref={selectedLanguageWrapperRef}
 			>
 				<Image
-					alt={selectLanguage(locale).selectedLanguageImageAltText}
-					height={30}
+					alt={selectedLanguageImage.alt}
+					height={selectedLanguageImage.height}
 					priority
-					src={selectLanguage(locale).selectedLanguageFlagImageSrc}
-					width={30}
+					src={selectedLanguageImage.src}
+					width={selectedLanguageImage.width}
 				/>
 				<IoIosArrowUp />
 			</SelectedLanguageImageWrapper>

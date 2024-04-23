@@ -31,7 +31,13 @@ export const languageSelectorHr = {
 			selectedLanguageImageAltText: "Talijanska zastava"
 		}
 	],
-	languageSelectorTitle: "Izaberite jezik:"
+	languageSelectorTitle: "Izaberite jezik:",
+	selectedLanguageImage: {
+		alt: "Zastava republike Hrvatske",
+		height: 30,
+		src: "/images/language-selector/croatia-flag-circle.png",
+		width: 30
+	}
 };
 
 export const languageSelectorEn = {
@@ -68,7 +74,13 @@ export const languageSelectorEn = {
 			selectedLanguageImageAltText: "Italian flag"
 		}
 	],
-	languageSelectorTitle: "Choose your language:"
+	languageSelectorTitle: "Choose your language:",
+	selectedLanguageImage: {
+		alt: "UK flag",
+		height: 30,
+		src: "/images/language-selector/uk-flag-circle.png",
+		width: 30
+	}
 };
 
 export const languageSelectorIt = {
@@ -105,5 +117,11 @@ export const languageSelectorIt = {
 			selectedLanguageImageAltText: "Bandiera Italiana"
 		}
 	],
-	languageSelectorTitle: "Scegli la tua lingua:"
+	languageSelectorTitle: "Scegli la tua lingua:",
+	selectedLanguageImage: {
+		alt: "Bandiera Italiana",
+		height: 30,
+		src: "/images/language-selector/italy-flag-circle.png",
+		width: 30
+	}
 };
