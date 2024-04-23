@@ -2,7 +2,7 @@
 	"extends": [
 		"airbnb",
 		"airbnb-typescript",
-		"plugin:@typescript-eslint/recommended-type-checked",
+		"plugin:@typescript-eslint/strict-type-checked",
 		"plugin:@typescript-eslint/stylistic-type-checked",
 		"plugin:perfectionist/recommended-natural",
 		"plugin:prettier/recommended"
@@ -13,6 +13,12 @@
 	"rules": {
 		"react/react-in-jsx-scope": "off",
 		"react/require-default-props": "off",
-		"import/order": "off"
+		"import/order": "off",
+		"@typescript-eslint/restrict-template-expressions": [
+			"error",
+			{
+				"allowNumber": true
+			}
+		]
 	}
 }
