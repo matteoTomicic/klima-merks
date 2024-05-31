@@ -29,6 +29,49 @@ export const Container = styled.div`
 	}
 `;
 
+export const H1 = styled.h1`
+	font-size: 3rem;
+	line-height: 3.6rem;
+	font-weight: 700;
+
+	${device.up.LAPTOP} {
+		font-size: 5rem;
+		line-height: 5.8rem;
+	}
+`;
+
+export const H2 = styled.h2`
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	font-weight: 700;
+
+	${device.up.LAPTOP} {
+		font-size: 3.4rem;
+		line-height: 4rem;
+	}
+`;
+
+export const Subtitle1 = styled.p`
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	font-weight: 700;
+
+	${device.up.LAPTOP} {
+		font-size: 2.4rem;
+		line-height: 3.2rem;
+	}
+`;
+
+export const Subtitle2 = styled.p`
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+
+	${device.up.LAPTOP} {
+		font-size: 2rem;
+		line-height: 2.6rem;
+	}
+`;
+
 export const PRegular = styled.p`
 	font-size: 1.4rem;
 	line-height: 2rem;

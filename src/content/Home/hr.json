@@ -4,5 +4,14 @@
 		"Keywords": "Klima Merks, grijanje, hlađenje, partneri Vaillanta, ugradnja, održavanje, HVAC rješenja",
 		"Title": "Klima Merks | Ovlašteni Vaillant partner",
 		"Url": "/"
+	},
+	"HomepageBannerContent": {
+		"BannerImage": {
+			"Alt": "Vaillant dizalica topline montirana u dvorištu kuće."
+		},
+		"MainHeading": "Klima Merks",
+		"SubHeading": "- Ovlašteni <span>Vaillant</span> servis -",
+		"IntroText": "Od 1990., firma KLIMA - MERKS d.o.o. je vaš pouzdan izbor za vrhunsku klimatizaciju i grijanje. S ponosom pružamo usluge održavanja Vaillant opreme, s fokusom na kvalitetu i zadovoljstvo naših klijenata. Otkrijte zašto smo preferirani partner za sve vaše potrebe u klimatizaciji i grijanju. Budite dio naše priče o uspjehu.",
+		"CtaButtonText": "Kontaktiraj nas"
 	}
 }
