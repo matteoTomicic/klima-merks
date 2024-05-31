@@ -20,7 +20,7 @@ function LogoClouds({ heading, logos }: ILogoClouds) {
 
 				<LogosWrapper>
 					{logos.map((logo) => (
-						<Image alt={logo.alt} className="logo" height={90} key={logo.key} src={logo.src} width={140} />
+						<Image alt={logo.alt} className="logo" height={90} key={logo.key} src={logo.src} width={140} priority />
 					))}
 				</LogosWrapper>
 			</Container>
