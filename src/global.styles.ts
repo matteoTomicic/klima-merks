@@ -11,6 +11,7 @@ const montserrat = Montserrat({
 export const colors = {
 	dark: "#353535",
 	neutral: "#FFFFFF",
+	gray: "#FAFAFA",
 	primary: "#00917e",
 	primaryDarker: "#0c685c",
 	text: {
@@ -59,7 +60,6 @@ export default styled.createGlobalStyle`
 		font-family: ${fonts.default};
 		font-weight: 400;
 		font-size: 1.6rem;
-		background-color: gray;
 	}
 
 	header {

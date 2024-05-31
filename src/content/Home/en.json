@@ -13,5 +13,40 @@
 		"SubHeading": "- Authorized <span>Vaillant</span> service -",
 		"IntroText": "Since 1990, the company KLIMA - MERKS d.o.o. has been your reliable choice for top-notch air conditioning and heating. We proudly offer maintenance services for Vaillant equipment, with a focus on quality and customer satisfaction. Discover why we are the preferred partner for all your air conditioning and heating needs. Be part of our success story.",
 		"CtaButtonText": "Contact Us"
+	},
+	"LogoCloudsContent": {
+		"Heading": "Powered by <span>Vaillant Group:</span> Trusted Innovation in Climate Control Solutions",
+		"Logos": [
+			{
+				"key": 0,
+				"src": "/images/homepage/vaillant-logo.png",
+				"alt": "Vaillant logo"
+			},
+			{
+				"key": 1,
+				"src": "/images/homepage/awb-logo.png",
+				"alt": "AWB logo"
+			},
+			{
+				"key": 2,
+				"src": "/images/homepage/demir-dokum-logo.png",
+				"alt": "Demir Dokum logo"
+			},
+			{
+				"key": 3,
+				"src": "/images/homepage/glow-worm-logo.png",
+				"alt": "Glow Worm logo"
+			},
+			{
+				"key": 4,
+				"src": "/images/homepage/protherm-logo.png",
+				"alt": "Protherm logo"
+			},
+			{
+				"key": 5,
+				"src": "/images/homepage/saunier-duval-logo.png",
+				"alt": "Saunier Duval logo"
+			}
+		]
 	}
 }
