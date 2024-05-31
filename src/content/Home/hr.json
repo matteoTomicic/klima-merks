@@ -13,5 +13,40 @@
 		"SubHeading": "- Ovlašteni <span>Vaillant</span> servis -",
 		"IntroText": "Od 1990., firma KLIMA - MERKS d.o.o. je vaš pouzdan izbor za vrhunsku klimatizaciju i grijanje. S ponosom pružamo usluge održavanja Vaillant opreme, s fokusom na kvalitetu i zadovoljstvo naših klijenata. Otkrijte zašto smo preferirani partner za sve vaše potrebe u klimatizaciji i grijanju. Budite dio naše priče o uspjehu.",
 		"CtaButtonText": "Kontaktiraj nas"
+	},
+	"LogoCloudsContent": {
+		"Heading": "<span>Vaillant Grupa:</span> Pouzdane inovacije u svim područjima grijanja i hlađenja",
+		"Logos": [
+			{
+				"key": 0,
+				"src": "/images/homepage/vaillant-logo.png",
+				"alt": "Vaillant logo"
+			},
+			{
+				"key": 1,
+				"src": "/images/homepage/awb-logo.png",
+				"alt": "AWB logo"
+			},
+			{
+				"key": 2,
+				"src": "/images/homepage/demir-dokum-logo.png",
+				"alt": "Demir Dokum logo"
+			},
+			{
+				"key": 3,
+				"src": "/images/homepage/glow-worm-logo.png",
+				"alt": "Glow Worm logo"
+			},
+			{
+				"key": 4,
+				"src": "/images/homepage/protherm-logo.png",
+				"alt": "Protherm logo"
+			},
+			{
+				"key": 5,
+				"src": "/images/homepage/saunier-duval-logo.png",
+				"alt": "Saunier Duval logo"
+			}
+		]
 	}
 }
