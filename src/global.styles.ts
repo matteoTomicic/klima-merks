@@ -12,6 +12,7 @@ export const colors = {
 	dark: "#353535",
 	neutral: "#FFFFFF",
 	primary: "#00917e",
+	primaryDarker: "#0c685c",
 	text: {
 		disabled: "#989898",
 		light: "#FFFFFF",

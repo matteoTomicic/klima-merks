@@ -1,14 +1,21 @@
 import { GetStaticPropsContext } from "next";
 
+import HomepageBanner from "../src/components/HomepageBanner";
 import PageLayout from "../src/components/PageLayout";
 import { ContentType, IPageProps } from "../src/content/Home/types";
 
 export default function Home(pageProps: IPageProps) {
-	const { Metadata } = pageProps;
+	const { HomepageBannerContent, Metadata } = pageProps;
 
 	return (
 		<PageLayout description={Metadata.Description} keywords={Metadata.Keywords} title={Metadata.Title} url={Metadata.Url}>
-			Body content goes here...
+			<HomepageBanner
+				bannerImageAltText={HomepageBannerContent.BannerImage.Alt}
+				ctaButtonText={HomepageBannerContent.CtaButtonText}
+				introText={HomepageBannerContent.IntroText}
+				mainHeading={HomepageBannerContent.MainHeading}
+				subHeading={HomepageBannerContent.SubHeading}
+			/>
 		</PageLayout>
 	);
 }

@@ -4,5 +4,14 @@
 		"Keywords": "Klima Merks, heating, cooling, Vaillant partners, installation, maintenance, HVAC solutions",
 		"Title": "Klima Merks | Authorized Vaillant partner",
 		"Url": "/"
+	},
+	"HomepageBannerContent": {
+		"BannerImage": {
+			"Alt": "Vaillant heat pump installed in the backyard of a house."
+		},
+		"MainHeading": "Klima Merks",
+		"SubHeading": "- Authorized <span>Vaillant</span> service -",
+		"IntroText": "Since 1990, the company KLIMA - MERKS d.o.o. has been your reliable choice for top-notch air conditioning and heating. We proudly offer maintenance services for Vaillant equipment, with a focus on quality and customer satisfaction. Discover why we are the preferred partner for all your air conditioning and heating needs. Be part of our success story.",
+		"CtaButtonText": "Contact Us"
 	}
 }
