@@ -48,5 +48,33 @@
 				"alt": "Saunier Duval logo"
 			}
 		]
+	},
+	"FeaturesContent": {
+		"IntroText": "Sve što Vam je potrebno",
+		"Heading": "Ovlašteni servis za Vaillant uređaje",
+		"SubHeading": "Poslujemo odgovorno, precizno i efikasno. Dugogodišnje iskustvo i mnogobrojni zadovoljni klijenti garancija su kvalitete naših usluga.",
+		"ImageAltText": "Montaža Vaillantove dizalice topline od strane ovlaštenog Vaillant servisera",
+		"Features": [
+			{
+				"key": 0,
+				"icon": "FaToolbox",
+				"text": "<span>Kvalitetno održavanje. </span>Naš tim stručnjaka pruža visokokvalitetno održavanje svih Vaillant uređaja, uključujući klimatizacijske sustave, ventilaciju, grijanje, plinske bojlere i dizalice topline. Jamčimo optimalan rad vaših uređaja."
+			},
+			{
+				"key": 1,
+				"icon": "FaTools",
+				"text": "<span>Brza intervencija. </span>Naša lokalna dostupnost u Puli i cijeloj Istri omogućava nam brzu reakciju na vaše zahtjeve. Naši tehničari stižu na lokaciju u najkraćem mogućem roku kako bi vam pružili potrebnu pomoć."
+			},
+			{
+				"key": 2,
+				"icon": "MdVerified",
+				"text": "<span>Pouzdanost i točnost. </span>Poštujemo dogovorene rokove i uvijek završavamo radove na vrijeme. Naša pedantnost i odgovornost prema klijentima jamče visoku kvalitetu izvedbe i vaše zadovoljstvo."
+			},
+			{
+				"key": 3,
+				"icon": "MdHandshake",
+				"text": "<span>Zadovoljstvo klijenata. </span>Naš uspjeh temelji se na povjerenju i zadovoljstvu naših klijenata. Pridružite se mnogobrojnim zadovoljnim klijentima i uvjerite se sami u našu stručnost i kvalitetu."
+			}
+		]
 	}
 }

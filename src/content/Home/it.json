@@ -48,5 +48,33 @@
 				"alt": "Saunier Duval logo"
 			}
 		]
+	},
+	"FeaturesContent": {
+		"IntroText": "Tutto ciò di cui hai bisogno",
+		"Heading": "Servizio autorizzato per dispositivi Vaillant",
+		"SubHeading": "Operiamo in modo responsabile, preciso ed efficiente. Anni di esperienza e numerosi clienti soddisfatti garantiscono la qualità dei nostri servizi.",
+		"ImageAltText": "Installazione di una pompa di calore Vaillant da parte di un tecnico autorizzato Vaillant",
+		"Features": [
+			{
+				"key": 0,
+				"icon": "FaToolbox",
+				"text": "<span>Manutenzione di qualità. </span>Il nostro team di esperti offre una manutenzione di alta qualità per tutti i dispositivi Vaillant, inclusi sistemi di climatizzazione, ventilazione, riscaldamento, caldaie a gas e pompe di calore. Garantiamo prestazioni ottimali dei tuoi dispositivi."
+			},
+			{
+				"key": 1,
+				"icon": "FaTools",
+				"text": "<span>Intervento rapido. </span>La nostra presenza locale a Pola e in tutta l'Istria ci consente di rispondere rapidamente alle tue richieste. I nostri tecnici arrivano sul posto il prima possibile per fornirti l'assistenza necessaria."
+			},
+			{
+				"key": 2,
+				"icon": "MdVerified",
+				"text": "<span>Affidabilità e precisione. </span>Rispettiamo le scadenze concordate e finiamo sempre i progetti in tempo. La nostra meticolosità e responsabilità verso i clienti garantiscono prestazioni di alta qualità e la tua soddisfazione."
+			},
+			{
+				"key": 3,
+				"icon": "MdHandshake",
+				"text": "<span>Soddisfazione del cliente. </span>Il nostro successo si basa sulla fiducia e la soddisfazione dei nostri clienti. Unisciti ai numerosi clienti soddisfatti e scopri tu stesso la nostra competenza e qualità."
+			}
+		]
 	}
 }
