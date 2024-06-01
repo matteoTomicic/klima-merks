@@ -48,5 +48,33 @@
 				"alt": "Saunier Duval logo"
 			}
 		]
+	},
+	"FeaturesContent": {
+		"IntroText": "Everything You Need",
+		"Heading": "Authorized Service for Vaillant Devices",
+		"SubHeading": "We operate responsibly, precisely, and efficiently. Years of experience and numerous satisfied clients guarantee the quality of our services.",
+		"ImageAltText": "Installation of Vaillant heat pump by authorized Vaillant service technician",
+		"Features": [
+			{
+				"key": 0,
+				"icon": "FaToolbox",
+				"text": "<span>Quality maintenance. </span>Our team of experts provides high-quality maintenance for all Vaillant devices, including air conditioning systems, ventilation, heating, gas boilers, and heat pumps. We guarantee optimal performance of your devices."
+			},
+			{
+				"key": 1,
+				"icon": "FaTools",
+				"text": "<span>Quick intervention. </span>Our local presence in Pula and throughout Istria enables us to respond quickly to your requests. Our technicians arrive at the location as soon as possible to provide you with the necessary assistance."
+			},
+			{
+				"key": 2,
+				"icon": "MdVerified",
+				"text": "<span>Reliability and accuracy. </span>We respect agreed deadlines and always finish projects on time. Our meticulousness and responsibility towards clients guarantee high quality performance and your satisfaction."
+			},
+			{
+				"key": 3,
+				"icon": "MdHandshake",
+				"text": "<span>Client satisfaction. </span>Our success is based on the trust and satisfaction of our clients. Join the numerous satisfied clients and experience for yourself our expertise and quality."
+			}
+		]
 	}
 }
