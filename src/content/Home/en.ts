@@ -164,6 +164,46 @@ const content: IHomeContentTypes = {
 				]
 			}
 		]
+	},
+	productsShowcaseContent: {
+		heading: "Protect Your Home with <span>Vaillant</span>",
+		subHeading:
+			"As the leading provider of Vaillant equipment maintenance, Klima Merks ensures your home remains comfortable and efficient. Our expert Vaillant maintenance services guarantee optimal performance and reliability.",
+		products: [
+			{
+				key: 0,
+				productImage: {
+					alt: "Vaillant gas boiler",
+					src: "/images/homepage/gas-boiler.jpg"
+				},
+				productTitle: "Gas Boilers",
+				productDescription:
+					"Whether it's a simple replacement or a new construction project, our gas appliances are a compact 'all-in-one' solution with low investment costs and short payback periods. Thousands of homeowners trust our range of gas boilers to heat their homes safely and efficiently. Find out why and join them today. At Klima Merks, we are proud to offer a range of gas boiler solutions equipped with a wide range of efficient technologies to suit any living space, with or without an integrated hot water tank. Each of our boilers offers the highest quality, reliability, and performance to ensure your home's superior comfort.",
+				reversedOrder: false
+			},
+			{
+				key: 1,
+				productImage: {
+					alt: "Vaillant heat pump",
+					src: "/images/homepage/heat-pump.jpg"
+				},
+				productTitle: "Heat Pumps",
+				productDescription:
+					"By choosing Vaillant heat pumps, you become more energy independent. Heat pumps are a relatively new but extremely efficient product on the market, designed for heating, cooling spaces, and preparing hot water. They operate using infinitely available free renewable energy sources – thermal energy from the air. As such, they are an excellent investment that will soon pay off and ensure you feel comfortable and 'at home' in your space.",
+				reversedOrder: true
+			},
+			{
+				key: 2,
+				productImage: {
+					alt: "Vaillant air conditioner",
+					src: "/images/homepage/ac-device.jpg"
+				},
+				productTitle: "Air Conditioners",
+				productDescription:
+					"A modern comprehensive solution for comfortable cooling and heating all year round. They are common in areas where summers are particularly hot, and now air conditioners are increasingly being installed in areas with milder climates. Thanks to the latest technology, air conditioners not only cool but also heat and provide air circulation. Enjoy the maximum comfort that Vaillant air conditioners provide, not only in summer but throughout the year!",
+				reversedOrder: false
+			}
+		]
 	}
 };
 

@@ -4,6 +4,7 @@ import { IFeatures } from "../components/Features";
 import { IHomepageBanner } from "../components/HomepageBanner";
 import { ILogoClouds } from "../components/LogoClouds";
 import { IOurServices } from "../components/OurServices";
+import { IProductsShowcase } from "../components/ProductsShowcase";
 
 interface IMetadata {
 	description: string;
@@ -18,4 +19,5 @@ export interface IHomeContentTypes {
 	logoCloudsContent: ILogoClouds;
 	featuresContent: IFeatures;
 	ourServicesContent: IOurServices;
+	productsShowcaseContent: IProductsShowcase;
 }

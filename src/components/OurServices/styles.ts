@@ -24,8 +24,8 @@ export const ServiceGrid = styled.div`
 
 export const ServiceCard = styled.div`
 	background: #fff;
-	border-radius: 15px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 1rem;
+	box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 	max-width: 34.4rem;
 	display: flex;

@@ -164,6 +164,46 @@ const content: IHomeContentTypes = {
 				]
 			}
 		]
+	},
+	productsShowcaseContent: {
+		heading: "Proteggi la tua casa con <span>Vaillant</span>",
+		subHeading:
+			"Come il principale fornitore di manutenzione delle apparecchiature Vaillant, Klima Merks assicura che la tua casa rimanga confortevole ed efficiente. I nostri servizi di manutenzione esperti dei dispositivi Vaillant garantiscono prestazioni ottimali e affidabilità.",
+		products: [
+			{
+				key: 0,
+				productImage: {
+					alt: "Caldaia a gas Vaillant",
+					src: "/images/homepage/gas-boiler.jpg"
+				},
+				productTitle: "Caldaie a Gas",
+				productDescription:
+					"Che si tratti di una semplice sostituzione o di un progetto di nuova costruzione, i nostri apparecchi a gas sono una soluzione compatta 'tutto in uno' con bassi costi di investimento e brevi periodi di ammortamento. Migliaia di proprietari di case si affidano alla nostra gamma di caldaie a gas per riscaldare le loro case in modo sicuro ed efficiente. Scopri perché e unisciti a loro oggi stesso. In Klima Merks siamo orgogliosi di offrire una gamma di soluzioni per caldaie a gas dotate di un'ampia gamma di tecnologie efficienti adatte a qualsiasi spazio abitativo, con o senza serbatoio dell'acqua calda integrato. Ognuna delle nostre caldaie offre la massima qualità, affidabilità e prestazioni per garantire il comfort superiore della tua casa.",
+				reversedOrder: false
+			},
+			{
+				key: 1,
+				productImage: {
+					alt: "Pompa di calore Vaillant",
+					src: "/images/homepage/heat-pump.jpg"
+				},
+				productTitle: "Pompe di Calore",
+				productDescription:
+					"Scegliendo le pompe di calore Vaillant, diventi più indipendente dal punto di vista energetico. Le pompe di calore sono un prodotto relativamente nuovo ma estremamente efficiente sul mercato, progettate per riscaldare, raffreddare gli spazi e preparare l'acqua calda. Funzionano utilizzando fonti di energia rinnovabile gratuite e infinitamente disponibili: l'energia termica dall'aria. Come tali, sono un ottimo investimento che si ripagherà presto e garantirà che tu ti senta a tuo agio e 'come a casa' nel tuo spazio.",
+				reversedOrder: true
+			},
+			{
+				key: 2,
+				productImage: {
+					alt: "Condizionatore Vaillant",
+					src: "/images/homepage/ac-device.jpg"
+				},
+				productTitle: "Condizionatori",
+				productDescription:
+					"Una soluzione moderna e completa per un raffreddamento e un riscaldamento confortevoli tutto l'anno. Sono comuni nelle aree in cui le estati sono particolarmente calde, e ora i condizionatori d'aria vengono sempre più installati anche nelle aree con climi più miti. Grazie alla tecnologia più recente, i condizionatori d'aria non solo raffreddano ma anche riscaldano e garantiscono la circolazione dell'aria. Goditi il massimo comfort offerto dai condizionatori Vaillant, non solo in estate, ma durante tutto l'anno!",
+				reversedOrder: false
+			}
+		]
 	}
 };
 

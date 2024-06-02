@@ -168,6 +168,47 @@ const content: IHomeContentTypes = {
 				]
 			}
 		]
+	},
+
+	productsShowcaseContent: {
+		heading: "Zaštite svoj dom s <span>Vaillantom</span>",
+		subHeading:
+			"Kao vodeći pružatelj održavanja opreme Vaillant, Klima Merks osigurava da vaš dom ostane udoban i učinkovit. Naše stručne usluge održavanja Vaillantovih uređaja jamče optimalnu izvedbu i pouzdanost.",
+		products: [
+			{
+				key: 0,
+				productImage: {
+					alt: "Vaillantov plinski bojler",
+					src: "/images/homepage/gas-boiler.jpg"
+				},
+				productTitle: "Plinski bojleri",
+				productDescription:
+					"Bilo da se radi o jednostavnoj zamjeni ili projektu nove gradnje, naši plinski uređaji kompaktno su 'sve u jednom' rješenje s niskim investicijskim troškovima i kratkim razdobljima amortizacije. Tisuće vlasnika kuća vjeruju našoj paleti plinskih bojlera za grijanje domova, na siguran i učinkovit način. Saznajte zašto i pridružite im se danas. U tvrtki Klima Merks ponosni smo što nudimo niz rješenja za plinske bojlere opremljene širokim rasponom učinkovitih tehnologija koje odgovaraju svakom životnom prostoru, sa ili bez integriranog spremnika za toplu vodu. Svaki naš bojler nudi najvišu kvalitetu, pouzdanost i performanse kako bi omogućio vrhunsku udobnost vašeg doma.",
+				reversedOrder: false
+			},
+			{
+				key: 1,
+				productImage: {
+					alt: "Vaillantova dizalica topline",
+					src: "/images/homepage/heat-pump.jpg"
+				},
+				productTitle: "Dizalice topline",
+				productDescription:
+					"Odabirom Vaillant dizalica topline postajete energetski neovisniji. Dizalice topline relativno su nov, ali iznimno učinkovit proizvod na tržištu, a namijenjene su grijanju, hlađenju prostora i pripremi tople vode. Za svoj rad koriste beskonačno raspoložive besplatne obnovljive izvore energije – toplinsku energiju iz zraka. Kao takve, izvrsno su ulaganje koje će se ubrzo isplatiti i osigurati da se u svojem prostoru osjećate ugodno i 'kao doma'.",
+				reversedOrder: true
+			},
+			{
+				key: 2,
+				productImage: {
+					alt: "Vaillantov klima uređaj",
+					src: "/images/homepage/ac-device.jpg"
+				},
+				productTitle: "Klima uređaji",
+				productDescription:
+					"Suvremeno cjelovito rješenje za ugodno hlađenje i grijanje tijekom cijele godine. Uobičajeni su na područjima gdje su ljeta posebno vruća, a sada se klima uređaji sve više ugrađuju i u područjima s blažom klimom. Zahvaljujući najnovijoj tehnologiji, klima uređaji ne samo da hlade nego i griju i omogućuju cirkulaciju zraka. Uživajte u maksimalnoj udobnost koju Vam pružaju Vaillant klima uređaji, ne samo ljeti, već tijekom cijele godine!",
+				reversedOrder: false
+			}
+		]
 	}
 };
 
