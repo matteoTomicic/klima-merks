@@ -76,5 +76,79 @@
 				"text": "<span>Zadovoljstvo klijenata. </span>Naš uspjeh temelji se na povjerenju i zadovoljstvu naših klijenata. Pridružite se mnogobrojnim zadovoljnim klijentima i uvjerite se sami u našu stručnost i kvalitetu."
 			}
 		]
+	},
+	"OurServicesContent": {
+		"Heading": "Naše Usluge",
+		"Services": [
+			{
+				"key": 0,
+				"title": "Servisi i popravci",
+				"description": "Da biste osigurali optimalan rad vašeg uređaja, potrebni su redoviti servisi i pravovremeni popravci. Naša stručnost i iskustvo jamče sigurnost i dugovječnost vaših uređaja.",
+				"details": ["- Redovito održavanje", "- Brzi i pouzdani popravci", "- Upotreba originalnih dijelova"],
+				"image": {
+					"src": "/images/homepage/service-and-repair.jpg",
+					"alt": "Servis Vaillant plinskog bojlera"
+				},
+				"icon": "FaTools",
+				"serviceButtons": [
+					{
+						"key": 0,
+						"text": "Cjenovnik",
+						"href": "/price-list"
+					},
+					{
+						"key": 1,
+						"text": "Saznajte više",
+						"href": "/services"
+					}
+				]
+			},
+			{
+				"key": 1,
+				"title": "Projektiranje i montaža",
+				"description": "Tražite moderno, sigurno i ekološki prihvatljivo rješenje za grijanje ili hlađenje? Nudimo vam cjelovite sustave prilagođene vašim potrebama, koristeći najnoviju tehnologiju.",
+				"details": ["- Personalizirani pristup", "- Najnovije tehnološke inovacije", "- Ekološki osviještene opcije"],
+				"image": {
+					"src": "/images/homepage/hvac-project-3d.jpg",
+					"alt": "3D projekt HVAC sistema"
+				},
+				"icon": "FaGear",
+				"serviceButtons": [
+					{
+						"key": 0,
+						"text": "Cjenovnik",
+						"href": "/price-list"
+					},
+					{
+						"key": 1,
+						"text": "Saznajte više",
+						"href": "/services"
+					}
+				]
+			},
+			{
+				"key": 2,
+				"title": "Savjetovanje",
+				"description": "Potrebna vam je pomoć pri odabiru, korištenju ili popravku uređaja? Naši stručnjaci su vam na raspolaganju za sve vrste savjeta i podrške. Nemojte se ustručavati kontaktirati nas.",
+				"details": ["- Stručne konzultacije", "- Prilagođena rješenja", "- Podrška u svim fazama"],
+				"image": {
+					"src": "/images/homepage/consulting.jpg",
+					"alt": "Konzultacije"
+				},
+				"icon": "BiSupport",
+				"serviceButtons": [
+					{
+						"key": 0,
+						"text": "Cjenovnik",
+						"href": "/price-list"
+					},
+					{
+						"key": 1,
+						"text": "Saznajte više",
+						"href": "/services"
+					}
+				]
+			}
+		]
 	}
 }

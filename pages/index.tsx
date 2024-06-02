@@ -3,11 +3,12 @@ import { GetStaticPropsContext } from "next";
 import Features from "../src/components/Features";
 import HomepageBanner from "../src/components/HomepageBanner";
 import LogoClouds from "../src/components/LogoClouds";
+import OurServices from "../src/components/OurServices";
 import PageLayout from "../src/components/PageLayout";
 import { ContentType, IPageProps } from "../src/content/Home/types";
 
 export default function Home(pageProps: IPageProps) {
-	const { FeaturesContent, HomepageBannerContent, LogoCloudsContent, Metadata } = pageProps;
+	const { FeaturesContent, HomepageBannerContent, LogoCloudsContent, Metadata, OurServicesContent } = pageProps;
 
 	return (
 		<PageLayout description={Metadata.Description} keywords={Metadata.Keywords} title={Metadata.Title} url={Metadata.Url}>
@@ -26,6 +27,7 @@ export default function Home(pageProps: IPageProps) {
 				introText={FeaturesContent.IntroText}
 				subHeading={FeaturesContent.SubHeading}
 			/>
+			<OurServices heading={OurServicesContent.Heading} services={OurServicesContent.Services} />
 		</PageLayout>
 	);
 }

@@ -82,3 +82,14 @@ export const PRegular = styled.p`
 		line-height: 2.4rem;
 	}
 `;
+
+export const Footnote = styled.p`
+	font-size: 1.2rem;
+	line-height: 2rem;
+	color: ${colors.text.primary};
+
+	${device.up.LAPTOP} {
+		font-size: 1.4rem;
+		line-height: 2.4rem;
+	}
+`;

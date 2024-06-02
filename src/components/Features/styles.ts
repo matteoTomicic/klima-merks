@@ -48,7 +48,7 @@ export const FeaturesImage = styled.div`
 	margin-bottom: ${mixins.spacing(4)};
 	margin-left: auto;
 	margin-right: auto;
-	width: clamp(326px, 80vw, 900px);
+	width: clamp(32.6rem, 80vw, 90rem);
 
 	${device.up.DT_XL} {
 		margin-bottom: ${mixins.spacing(8)};

@@ -76,5 +76,79 @@
 				"text": "<span>Soddisfazione del cliente. </span>Il nostro successo si basa sulla fiducia e la soddisfazione dei nostri clienti. Unisciti ai numerosi clienti soddisfatti e scopri tu stesso la nostra competenza e qualità."
 			}
 		]
+	},
+	"OurServicesContent": {
+		"Heading": "I Nostri Servizi",
+		"Services": [
+			{
+				"key": 0,
+				"title": "Servizi e Riparazioni",
+				"description": "Per garantire il funzionamento ottimale del tuo dispositivo, sono necessari servizi regolari e riparazioni tempestive. La nostra competenza e esperienza garantiscono la sicurezza e la longevità dei tuoi dispositivi.",
+				"details": ["- Manutenzione regolare", "- Riparazioni rapide e affidabili", "- Utilizzo di parti originali"],
+				"image": {
+					"src": "/images/homepage/service-and-repair.jpg",
+					"alt": "Servizio caldaia a gas Vaillant"
+				},
+				"icon": "FaTools",
+				"serviceButtons": [
+					{
+						"key": 0,
+						"text": "Prezzi",
+						"href": "/price-list"
+					},
+					{
+						"key": 1,
+						"text": "Dettagli",
+						"href": "/services"
+					}
+				]
+			},
+			{
+				"key": 1,
+				"title": "Progettazione e Installazione",
+				"description": "Cerchi una soluzione di riscaldamento o raffreddamento moderna, sicura ed ecologica? Offriamo sistemi completi su misura per le tue esigenze, utilizzando la tecnologia più recente.",
+				"details": ["- Approccio personalizzato", "- Ultime innovazioni tecnologiche", "- Opzioni ecologiche"],
+				"image": {
+					"src": "/images/homepage/hvac-project-3d.jpg",
+					"alt": "Progetto HVAC 3D"
+				},
+				"icon": "FaGear",
+				"serviceButtons": [
+					{
+						"key": 0,
+						"text": "Prezzi",
+						"href": "/price-list"
+					},
+					{
+						"key": 1,
+						"text": "Dettagli",
+						"href": "/services"
+					}
+				]
+			},
+			{
+				"key": 2,
+				"title": "Consulenza",
+				"description": "Hai bisogno di aiuto nella scelta, utilizzo o riparazione di un dispositivo? I nostri esperti sono disponibili per ogni tipo di consiglio e supporto. Non esitare a contattarci.",
+				"details": ["- Consulenze esperte", "- Soluzioni personalizzate", "- Supporto in tutte le fasi"],
+				"image": {
+					"src": "/images/homepage/consulting.jpg",
+					"alt": "Consulenze"
+				},
+				"icon": "BiSupport",
+				"serviceButtons": [
+					{
+						"key": 0,
+						"text": "Prezzi",
+						"href": "/price-list"
+					},
+					{
+						"key": 1,
+						"text": "Dettagli",
+						"href": "/services"
+					}
+				]
+			}
+		]
 	}
 }
