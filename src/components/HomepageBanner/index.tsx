@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-import Routes from "../../constants/routes.constants";
+import Routes from "../../enums/routes";
 import { H1, H2, Subtitle2 } from "../../styles/shared.styles";
 import Section from "../LayoutComponents/Section";
 import CtaButton from "../UI/CtaButton";
 import ContainerStyled from "./styles";
 
-interface IHomepageBanner {
+export interface IHomepageBanner {
 	bannerImageAltText: string;
 	ctaButtonText: string;
 	introText: string;

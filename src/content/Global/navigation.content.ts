@@ -1,4 +1,4 @@
-import Routes from "../../constants/routes.constants";
+import Routes from "../../enums/routes";
 
 export const navigationHr = {
 	logo: {

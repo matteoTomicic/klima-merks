@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { PropsWithChildren } from "react";
 
-import { WEBSITE_URL } from "../../constants/general.constants";
+import Constants from "../../enums/constants";
 import Navigation from "../LayoutComponents/Navigation";
 import getLayoutComponentsTranslations from "./layoutComponentsTranslations.helper";
 
@@ -26,7 +26,7 @@ function PageLayout({ children, description, keywords, title, url }: IPageLayout
 				<meta content="text/html; charset=utf-8" httpEquiv="Content-Type" />
 				<meta content={keywords} name="keywords" />
 				<meta content="website" property="og:type" />
-				<meta content={`${WEBSITE_URL}${url}`} property="og:url" />
+				<meta content={`${Constants.WEBSITE_URL}${url}`} property="og:url" />
 				<meta content={title} property="og:title" />
 				<meta content={description} property="og:description" />
 				<meta content="/images/logo.svg" property="og:image" />

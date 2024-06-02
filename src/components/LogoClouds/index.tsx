@@ -5,7 +5,7 @@ import { Container, H2 } from "../../styles/shared.styles";
 import Section from "../LayoutComponents/Section";
 import { HeadingWrapper, LogosWrapper } from "./styles";
 
-interface ILogoClouds {
+export interface ILogoClouds {
 	heading: string;
 	logos: ImageProps[];
 }

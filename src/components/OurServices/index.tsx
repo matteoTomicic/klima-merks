@@ -37,7 +37,7 @@ interface IService {
 	title: string;
 }
 
-interface IOurServices {
+export interface IOurServices {
 	heading: string;
 	services: IService[];
 }
