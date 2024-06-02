@@ -2,8 +2,8 @@ import {
 	languageSelectorEn,
 	languageSelectorHr,
 	languageSelectorIt
-} from "../../content/Global/LanguageSelector.content";
-import { navigationEn, navigationHr, navigationIt } from "../../content/Global/Navigation.content";
+} from "../../content/Global/languageSelector.content";
+import { navigationEn, navigationHr, navigationIt } from "../../content/Global/navigation.content";
 
 const getLayoutComponentsTranslations = (language: string | undefined) => {
 	let navigationItems;

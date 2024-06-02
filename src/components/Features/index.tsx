@@ -16,7 +16,7 @@ interface IFeatureItem {
 	text: string;
 }
 
-interface IFeatures {
+export interface IFeatures {
 	features: IFeatureItem[];
 	heading: string;
 	imageAltText: string;

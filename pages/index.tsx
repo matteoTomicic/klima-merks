@@ -5,39 +5,40 @@ import HomepageBanner from "../src/components/HomepageBanner";
 import LogoClouds from "../src/components/LogoClouds";
 import OurServices from "../src/components/OurServices";
 import PageLayout from "../src/components/PageLayout";
-import { ContentType, IPageProps } from "../src/content/Home/types";
+import { IHomeContentTypes } from "../src/content/types";
 
-export default function Home(pageProps: IPageProps) {
-	const { FeaturesContent, HomepageBannerContent, LogoCloudsContent, Metadata, OurServicesContent } = pageProps;
+export default function Home(pageProps: IHomeContentTypes) {
+	const { featuresContent, homepageBannerContent, logoCloudsContent, metadata, ourServicesContent } = pageProps;
 
 	return (
-		<PageLayout description={Metadata.Description} keywords={Metadata.Keywords} title={Metadata.Title} url={Metadata.Url}>
+		<PageLayout description={metadata.description} keywords={metadata.keywords} title={metadata.title} url={metadata.url}>
 			<HomepageBanner
-				bannerImageAltText={HomepageBannerContent.BannerImage.Alt}
-				ctaButtonText={HomepageBannerContent.CtaButtonText}
-				introText={HomepageBannerContent.IntroText}
-				mainHeading={HomepageBannerContent.MainHeading}
-				subHeading={HomepageBannerContent.SubHeading}
+				bannerImageAltText={homepageBannerContent.bannerImageAltText}
+				ctaButtonText={homepageBannerContent.ctaButtonText}
+				introText={homepageBannerContent.introText}
+				mainHeading={homepageBannerContent.mainHeading}
+				subHeading={homepageBannerContent.subHeading}
 			/>
-			<LogoClouds heading={LogoCloudsContent.Heading} logos={LogoCloudsContent.Logos} />
+			<LogoClouds heading={logoCloudsContent.heading} logos={logoCloudsContent.logos} />
 			<Features
-				features={FeaturesContent.Features}
-				heading={FeaturesContent.Heading}
-				imageAltText={FeaturesContent.ImageAltText}
-				introText={FeaturesContent.IntroText}
-				subHeading={FeaturesContent.SubHeading}
+				features={featuresContent.features}
+				heading={featuresContent.heading}
+				imageAltText={featuresContent.imageAltText}
+				introText={featuresContent.introText}
+				subHeading={featuresContent.subHeading}
 			/>
-			<OurServices heading={OurServicesContent.Heading} services={OurServicesContent.Services} />
+			<OurServices heading={ourServicesContent.heading} services={ourServicesContent.services} />
 		</PageLayout>
 	);
 }
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
-	const content: unknown = await import(`../src/content/Home/${locale}.json`);
+	const module = (await import(`../src/content/Home/${locale}.ts`)) as { default: IHomeContentTypes };
+	const content = module.default;
 
 	return {
 		props: {
-			...(content as ContentType)
+			...content
 		}
 	};
 }

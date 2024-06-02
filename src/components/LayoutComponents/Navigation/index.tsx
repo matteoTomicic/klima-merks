@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-import Routes from "../../../constants/routes.constants";
+import Routes from "../../../enums/routes";
 import HamburgerMenu from "./HamburgerMenu";
 import LanguageSelector, { ILanguageSelector } from "./LanguageSelector";
 import {
