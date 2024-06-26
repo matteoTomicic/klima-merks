@@ -2,6 +2,7 @@
 /* eslint-disable perfectionist/sort-object-types */
 
 import Routes from "../../enums/routes";
+import { colors } from "../../global.styles";
 import { IHomeContentTypes } from "../types";
 
 const content: IHomeContentTypes = {
@@ -207,6 +208,41 @@ const content: IHomeContentTypes = {
 				productDescription:
 					"Suvremeno cjelovito rješenje za ugodno hlađenje i grijanje tijekom cijele godine. Uobičajeni su na područjima gdje su ljeta posebno vruća, a sada se klima uređaji sve više ugrađuju i u područjima s blažom klimom. Zahvaljujući najnovijoj tehnologiji, klima uređaji ne samo da hlade nego i griju i omogućuju cirkulaciju zraka. Uživajte u maksimalnoj udobnost koju Vam pružaju Vaillant klima uređaji, ne samo ljeti, već tijekom cijele godine!",
 				reversedOrder: false
+			}
+		]
+	},
+
+	ourStoryByNumbersContent: {
+		heading: "Priča u brojevima",
+		introText: "Upoznajte našu povijest kroz brojeve koji govore o našim uspjesima i postignućima.",
+		statsCards: [
+			{
+				key: 0,
+				cardHeading: "Godina povjerenja",
+				cardText: "S ponosom održavamo Vaillant opremu već više od tri desetljeća.",
+				cardCounterNumber: 34,
+				cardBackgroundColor: colors.grayDarker,
+				cardMaxWidth: "44.8rem"
+			},
+			{
+				key: 1,
+				cardHeading: "Zadovoljnih klijenata",
+				cardText:
+					"Naše dugogodišnje iskustvo i predanost kvaliteti osigurali su nam povjerenje mnogih zadovoljnih klijenata. Svaki klijent za nas je važan, a njihovo zadovoljstvo je najbolji pokazatelj našeg rada.",
+				cardCounterNumber: 4000,
+				cardBackgroundColor: colors.darkSection,
+				cardMaxWidth: "54rem",
+				cardClassName: "light-text"
+			},
+			{
+				key: 2,
+				cardHeading: "Uspješnih projekata",
+				cardText:
+					"S našim uspješno završenim projektima, naša predanost i stručnost osigurali su kvalitetne rezultate i zadovoljstvo klijenata. Svaki projekt je prilika za rast i unapređenje naših usluga.",
+				cardCounterNumber: 1000,
+				cardBackgroundColor: colors.primaryDarker,
+				cardMaxWidth: "50rem",
+				cardClassName: "light-text"
 			}
 		]
 	}

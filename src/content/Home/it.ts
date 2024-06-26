@@ -2,6 +2,7 @@
 /* eslint-disable perfectionist/sort-object-types */
 
 import Routes from "../../enums/routes";
+import { colors } from "../../global.styles";
 import { IHomeContentTypes } from "../types";
 
 const content: IHomeContentTypes = {
@@ -12,6 +13,7 @@ const content: IHomeContentTypes = {
 		title: "Klima Merks | Autorizzato partner Vaillant",
 		url: Routes.HOME
 	},
+
 	homepageBannerContent: {
 		bannerImageAltText: "Pompa di calore Vaillant installata nel cortile di una casa.",
 		mainHeading: "Klima Merks",
@@ -20,6 +22,7 @@ const content: IHomeContentTypes = {
 			"Dal 1990, l'azienda KLIMA - MERKS d.o.o. è la vostra scelta affidabile per climatizzazione e riscaldamento di alta qualità. Offriamo con orgoglio servizi di manutenzione per l'attrezzatura Vaillant, con un focus sulla qualità e la soddisfazione del cliente. Scoprite perché siamo il partner preferito per tutte le vostre esigenze di climatizzazione e riscaldamento. Fate parte della nostra storia di successo.",
 		ctaButtonText: "Contattaci"
 	},
+
 	logoCloudsContent: {
 		heading: "Alimentato dal <span>Gruppo Vaillant:</span> Innovazione Affidabile nelle Soluzioni di Controllo del Clima",
 		logos: [
@@ -55,6 +58,7 @@ const content: IHomeContentTypes = {
 			}
 		]
 	},
+
 	featuresContent: {
 		introText: "Tutto ciò di cui hai bisogno",
 		heading: "Servizio autorizzato per dispositivi Vaillant",
@@ -88,6 +92,7 @@ const content: IHomeContentTypes = {
 			}
 		]
 	},
+
 	ourServicesContent: {
 		heading: "I Nostri Servizi",
 		services: [
@@ -165,6 +170,7 @@ const content: IHomeContentTypes = {
 			}
 		]
 	},
+
 	productsShowcaseContent: {
 		heading: "Proteggi la tua casa con <span>Vaillant</span>",
 		subHeading:
@@ -202,6 +208,41 @@ const content: IHomeContentTypes = {
 				productDescription:
 					"Una soluzione moderna e completa per un raffreddamento e un riscaldamento confortevoli tutto l'anno. Sono comuni nelle aree in cui le estati sono particolarmente calde, e ora i condizionatori d'aria vengono sempre più installati anche nelle aree con climi più miti. Grazie alla tecnologia più recente, i condizionatori d'aria non solo raffreddano ma anche riscaldano e garantiscono la circolazione dell'aria. Goditi il massimo comfort offerto dai condizionatori Vaillant, non solo in estate, ma durante tutto l'anno!",
 				reversedOrder: false
+			}
+		]
+	},
+
+	ourStoryByNumbersContent: {
+		heading: "Storia in numeri",
+		introText: "Conosci la nostra storia attraverso i numeri che parlano dei nostri successi e risultati.",
+		statsCards: [
+			{
+				key: 0,
+				cardHeading: "Anno di fiducia",
+				cardText: "Siamo orgogliosi di mantenere le attrezzature Vaillant da oltre tre decenni.",
+				cardCounterNumber: 34,
+				cardBackgroundColor: colors.grayDarker,
+				cardMaxWidth: "44.8rem"
+			},
+			{
+				key: 1,
+				cardHeading: "Clienti soddisfatti",
+				cardText:
+					"La nostra lunga esperienza e dedizione alla qualità ci hanno assicurato la fiducia di molti clienti soddisfatti. Ogni cliente per noi è importante, e la loro soddisfazione è il miglior indicatore del nostro lavoro.",
+				cardCounterNumber: 4000,
+				cardBackgroundColor: colors.darkSection,
+				cardMaxWidth: "54rem",
+				cardClassName: "light-text"
+			},
+			{
+				key: 2,
+				cardHeading: "Progetti di successo",
+				cardText:
+					"Con i nostri progetti completati con successo, il nostro impegno e la nostra competenza hanno garantito risultati di qualità e soddisfazione dei clienti. Ogni progetto è un'opportunità di crescita e miglioramento dei nostri servizi.",
+				cardCounterNumber: 1000,
+				cardBackgroundColor: colors.primaryDarker,
+				cardMaxWidth: "50rem",
+				cardClassName: "light-text"
 			}
 		]
 	}

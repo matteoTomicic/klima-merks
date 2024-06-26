@@ -4,6 +4,7 @@ import Features from "../src/components/Features";
 import HomepageBanner from "../src/components/HomepageBanner";
 import LogoClouds from "../src/components/LogoClouds";
 import OurServices from "../src/components/OurServices";
+import OurStoryByNumbers from "../src/components/OurStoryByNumbers";
 import PageLayout from "../src/components/PageLayout";
 import ProductsShowcase from "../src/components/ProductsShowcase";
 import { IHomeContentTypes } from "../src/content/types";
@@ -15,6 +16,7 @@ export default function Home(pageProps: IHomeContentTypes) {
 		logoCloudsContent,
 		metadata,
 		ourServicesContent,
+		ourStoryByNumbersContent,
 		productsShowcaseContent
 	} = pageProps;
 
@@ -40,6 +42,11 @@ export default function Home(pageProps: IHomeContentTypes) {
 				heading={productsShowcaseContent.heading}
 				products={productsShowcaseContent.products}
 				subHeading={productsShowcaseContent.subHeading}
+			/>
+			<OurStoryByNumbers
+				heading={ourStoryByNumbersContent.heading}
+				introText={ourStoryByNumbersContent.introText}
+				statsCards={ourStoryByNumbersContent.statsCards}
 			/>
 		</PageLayout>
 	);
