@@ -37,7 +37,7 @@ function OurStoryByNumbers({ heading, introText, statsCards }: IOurStoryByNumber
 							className={card.cardClassName}
 							key={card.key}
 						>
-							<CountUp className="count-number" end={card.cardCounterNumber} suffix="+" />
+							<CountUp className="count-number" enableScrollSpy end={card.cardCounterNumber} scrollSpyOnce suffix="+" />
 							<StatCardText>
 								<Subtitle1>{card.cardHeading}</Subtitle1>
 								<Subtitle2>{card.cardText}</Subtitle2>
