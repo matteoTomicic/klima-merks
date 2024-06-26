@@ -2,6 +2,7 @@
 /* eslint-disable perfectionist/sort-object-types */
 
 import Routes from "../../enums/routes";
+import { colors } from "../../global.styles";
 import { IHomeContentTypes } from "../types";
 
 const content: IHomeContentTypes = {
@@ -12,6 +13,7 @@ const content: IHomeContentTypes = {
 		title: "Klima Merks | Authorized Vaillant partner",
 		url: Routes.HOME
 	},
+
 	homepageBannerContent: {
 		bannerImageAltText: "Vaillant heat pump installed in the backyard of a house.",
 		mainHeading: "Klima Merks",
@@ -20,6 +22,7 @@ const content: IHomeContentTypes = {
 			"Since 1990, the company KLIMA - MERKS d.o.o. has been your reliable choice for top-notch air conditioning and heating. We proudly offer maintenance services for Vaillant equipment, with a focus on quality and customer satisfaction. Discover why we are the preferred partner for all your air conditioning and heating needs. Be part of our success story.",
 		ctaButtonText: "Contact Us"
 	},
+
 	logoCloudsContent: {
 		heading: "Powered by <span>Vaillant Group:</span> Trusted Innovation in Climate Control Solutions",
 		logos: [
@@ -55,6 +58,7 @@ const content: IHomeContentTypes = {
 			}
 		]
 	},
+
 	featuresContent: {
 		introText: "Everything You Need",
 		heading: "Authorized Service for Vaillant Devices",
@@ -88,6 +92,7 @@ const content: IHomeContentTypes = {
 			}
 		]
 	},
+
 	ourServicesContent: {
 		heading: "Our Services",
 		services: [
@@ -165,6 +170,7 @@ const content: IHomeContentTypes = {
 			}
 		]
 	},
+
 	productsShowcaseContent: {
 		heading: "Protect Your Home with <span>Vaillant</span>",
 		subHeading:
@@ -202,6 +208,41 @@ const content: IHomeContentTypes = {
 				productDescription:
 					"A modern comprehensive solution for comfortable cooling and heating all year round. They are common in areas where summers are particularly hot, and now air conditioners are increasingly being installed in areas with milder climates. Thanks to the latest technology, air conditioners not only cool but also heat and provide air circulation. Enjoy the maximum comfort that Vaillant air conditioners provide, not only in summer but throughout the year!",
 				reversedOrder: false
+			}
+		]
+	},
+
+	ourStoryByNumbersContent: {
+		heading: "Story by Numbers",
+		introText: "Discover our history through numbers that speak about our successes and achievements.",
+		statsCards: [
+			{
+				key: 0,
+				cardHeading: "Years of Trust",
+				cardText: "We have proudly maintained Vaillant equipment for over three decades.",
+				cardCounterNumber: 34,
+				cardBackgroundColor: colors.grayDarker,
+				cardMaxWidth: "44.8rem"
+			},
+			{
+				key: 1,
+				cardHeading: "Satisfied Clients",
+				cardText:
+					"Our long-standing experience and commitment to quality have earned us the trust of many satisfied clients. Every client is important to us, and their satisfaction is the best indicator of our work.",
+				cardCounterNumber: 4000,
+				cardBackgroundColor: colors.darkSection,
+				cardMaxWidth: "54rem",
+				cardClassName: "light-text"
+			},
+			{
+				key: 2,
+				cardHeading: "Successful Projects",
+				cardText:
+					"With our successfully completed projects, our dedication and expertise have ensured quality results and client satisfaction. Every project is an opportunity for growth and improvement of our services.",
+				cardCounterNumber: 1000,
+				cardBackgroundColor: colors.primaryDarker,
+				cardMaxWidth: "50rem",
+				cardClassName: "light-text"
 			}
 		]
 	}
