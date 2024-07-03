@@ -30,11 +30,11 @@ export const LogoWrapper = styled.div`
 `;
 
 export const NavigationItems = styled.div`
+	${mixins.transitionNormal("all")};
 	width: 100%;
 	height: 0;
 	margin: 0;
 	overflow: hidden;
-	transition: 0.3s all ease-in-out;
 	background-color: ${colors.neutral};
 	position: absolute;
 	top: 6.8rem;
@@ -98,6 +98,7 @@ export const NavigationItem = styled.span<INavigationItem>`
 		background-color: ${colors.primary};
 
 		${device.up.LAPTOP} {
+			${mixins.transitionNormal("all")};
 			left: 0;
 			width: 100%;
 			height: 100%;
@@ -105,7 +106,6 @@ export const NavigationItem = styled.span<INavigationItem>`
 			border-bottom: 0.2rem solid ${colors.primary};
 			transform: ${({ $currentPage }) =>
 				$currentPage ? `scale(1) translateX(0) translateY(0)` : `scale(0) translateX(0) translateY(5rem)`};
-			transition: all 0.25s ease-in-out;
 			opacity: ${({ $currentPage }) => ($currentPage ? 1 : 0)};
 		}
 	}
@@ -126,12 +126,12 @@ export const NavigationItem = styled.span<INavigationItem>`
 	}
 
 	a {
+		${mixins.transitionNormal("color")};
 		font-size: 1.6rem;
 		line-height: 2.4rem;
 		font-weight: 600;
 		text-decoration: none;
 		color: ${({ $currentPage }) => ($currentPage ? colors.primary : colors.text.disabled)};
-		transition: color 0.25s ease-in-out;
 		z-index: 999;
 		position: relative;
 

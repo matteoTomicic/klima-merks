@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { colors, mixins } from "../../../global.styles";
 
 const CtaButtonStyled = styled.div`
+	${mixins.transitionNormal("all")};
 	background-color: ${colors.primary};
 	display: inline-flex;
 	border-radius: 1.2rem;
-	transition: 0.25s ease-in-out;
 
 	a {
 		text-decoration: none;

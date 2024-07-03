@@ -23,8 +23,8 @@ export const SelectedLanguageImageWrapper = styled.div<ISelectedLanguageImageWra
 		color: ${colors.dark};
 
 		${device.up.LAPTOP} {
+			${mixins.transitionNormal("transform")};
 			transform: ${({ $isLanguagesDropdownOpen }) => ($isLanguagesDropdownOpen ? "rotateX(0)" : "rotateX(180deg)")};
-			transition: 0.25s transform ease-in-out;
 		}
 	}
 `;
@@ -37,6 +37,7 @@ export const LanguageName = styled.span`
 `;
 
 export const LanguagesDropdown = styled.div`
+	${mixins.transitionNormal("height")};
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -50,9 +51,9 @@ export const LanguagesDropdown = styled.div`
 	align-items: center;
 	gap: ${mixins.spacing(4)};
 	overflow: hidden;
-	transition: 0.25s height ease-in-out;
 
 	${device.up.LAPTOP} {
+		${mixins.transitionNormal("all")};
 		left: unset;
 		right: 0;
 		bottom: unset;
@@ -62,7 +63,6 @@ export const LanguagesDropdown = styled.div`
 		padding: ${`${mixins.spacing(0)} ${mixins.spacing(4)}`};
 		border-bottom-right-radius: 1rem;
 		border-bottom-left-radius: 1rem;
-		transition: 0.25s all ease-in-out;
 	}
 
 	&.opened {
@@ -84,12 +84,12 @@ export const LanguagesDropdown = styled.div`
 `;
 
 export const Flag = styled.div`
+	${mixins.transitionNormal("all")};
 	position: relative;
 	padding: ${`${mixins.spacing(1)} ${mixins.spacing(2)} ${mixins.spacing(1)} ${mixins.spacing(1)}`};
 	display: flex;
 	align-items: center;
 	border-radius: 2rem;
-	transition: 0.25s all ease-in-out;
 
 	${device.up.LAPTOP} {
 		min-width: 13.4rem;
