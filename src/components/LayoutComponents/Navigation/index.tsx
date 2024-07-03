@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 import Routes from "../../../enums/routes";
+import { INavigationItem } from "../shared.types";
 import HamburgerMenu from "./HamburgerMenu";
 import LanguageSelector, { ILanguageSelector } from "./LanguageSelector";
 import {
@@ -14,12 +15,6 @@ import {
 	NavigationItemsList,
 	NavigationStyled
 } from "./styles";
-
-interface INavigationItem {
-	href: string;
-	key: number;
-	label: string;
-}
 
 interface INavigation extends Omit<ILanguageSelector, "linkTo"> {
 	logo: ImageProps;

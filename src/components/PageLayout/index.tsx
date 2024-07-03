@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { PropsWithChildren } from "react";
 
 import Constants from "../../enums/constants";
+import Footer from "../LayoutComponents/Footer";
 import Navigation from "../LayoutComponents/Navigation";
 import getLayoutComponentsTranslations from "./layoutComponentsTranslations.helper";
 
@@ -43,7 +44,16 @@ function PageLayout({ children, description, keywords, title, url }: IPageLayout
 				/>
 			</header>
 			<main>{children}</main>
-			<footer>Footer goes here...</footer>
+			<Footer
+				companyMission={layoutComponentsTranslations.footerCompanyMission}
+				contactCategory={layoutComponentsTranslations.footerContact}
+				copyrightMessage={layoutComponentsTranslations.footerCopyrightMessage}
+				logo={layoutComponentsTranslations.footerLogo}
+				navigationCategoryTitle={layoutComponentsTranslations.footerNavigationCategoryTitle}
+				navigationItems={layoutComponentsTranslations.navigationItems}
+				ourServicesCategory={layoutComponentsTranslations.footerOurServices}
+				socialMediaItems={layoutComponentsTranslations.footerSocialMediaItems}
+			/>
 		</>
 	);
 }

@@ -106,7 +106,7 @@ export const ServiceLink = styled(Link)`
 	}
 
 	.service-link-icon {
+		${mixins.transitionNormal("width")};
 		width: 0;
-		transition: width 0.2s ease-in-out;
 	}
 `;

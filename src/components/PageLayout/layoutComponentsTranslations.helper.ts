@@ -1,3 +1,4 @@
+import { footerEn, footerHr, footerIt } from "../../content/Global/footer.content";
 import {
 	languageSelectorEn,
 	languageSelectorHr,
@@ -7,10 +8,17 @@ import { navigationEn, navigationHr, navigationIt } from "../../content/Global/n
 
 const getLayoutComponentsTranslations = (language: string | undefined) => {
 	let navigationItems;
+	let footerSocialMediaItems;
+	let footerCopyrightMessage;
+	let footerCompanyMission;
+	let footerOurServices;
+	let footerContact;
+	let footerLogo;
 	let languageSelectorItems;
 	let languageSelectorTitle;
 	let languageSelectorGoBackButtonText;
 	let selectedLanguageImage;
+	let footerNavigationCategoryTitle;
 	let logo;
 
 	switch (language) {
@@ -21,6 +29,13 @@ const getLayoutComponentsTranslations = (language: string | undefined) => {
 			languageSelectorTitle = languageSelectorEn.languageSelectorTitle;
 			languageSelectorGoBackButtonText = languageSelectorEn.languageSelectorGoBackButtonText;
 			selectedLanguageImage = languageSelectorEn.selectedLanguageImage;
+			footerSocialMediaItems = footerEn.socialMediaItems;
+			footerCopyrightMessage = footerEn.copyrightMessage;
+			footerLogo = footerEn.logo;
+			footerCompanyMission = footerEn.companyMission;
+			footerOurServices = footerEn.ourServicesCategory;
+			footerContact = footerEn.contactCategory;
+			footerNavigationCategoryTitle = footerEn.navigationCategoryTitle;
 			break;
 
 		case "it":
@@ -30,6 +45,13 @@ const getLayoutComponentsTranslations = (language: string | undefined) => {
 			languageSelectorTitle = languageSelectorIt.languageSelectorTitle;
 			languageSelectorGoBackButtonText = languageSelectorIt.languageSelectorGoBackButtonText;
 			selectedLanguageImage = languageSelectorIt.selectedLanguageImage;
+			footerSocialMediaItems = footerIt.socialMediaItems;
+			footerCopyrightMessage = footerIt.copyrightMessage;
+			footerLogo = footerIt.logo;
+			footerCompanyMission = footerIt.companyMission;
+			footerOurServices = footerIt.ourServicesCategory;
+			footerContact = footerIt.contactCategory;
+			footerNavigationCategoryTitle = footerIt.navigationCategoryTitle;
 			break;
 
 		default:
@@ -39,10 +61,24 @@ const getLayoutComponentsTranslations = (language: string | undefined) => {
 			languageSelectorTitle = languageSelectorHr.languageSelectorTitle;
 			languageSelectorGoBackButtonText = languageSelectorHr.languageSelectorGoBackButtonText;
 			selectedLanguageImage = languageSelectorHr.selectedLanguageImage;
+			footerSocialMediaItems = footerHr.socialMediaItems;
+			footerCopyrightMessage = footerHr.copyrightMessage;
+			footerLogo = footerHr.logo;
+			footerCompanyMission = footerHr.companyMission;
+			footerOurServices = footerHr.ourServicesCategory;
+			footerContact = footerHr.contactCategory;
+			footerNavigationCategoryTitle = footerHr.navigationCategoryTitle;
 			break;
 	}
 
 	return {
+		footerCompanyMission,
+		footerContact,
+		footerCopyrightMessage,
+		footerLogo,
+		footerNavigationCategoryTitle,
+		footerOurServices,
+		footerSocialMediaItems,
 		languageSelectorGoBackButtonText,
 		languageSelectorItems,
 		languageSelectorTitle,
