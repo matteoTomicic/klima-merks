@@ -86,8 +86,32 @@ export const NavigationLinks = styled.div`
 	a {
 		text-decoration: none;
 
+		${PRegular} {
+			${mixins.transitionNormal("color")};
+			display: inline;
+			position: relative;
+
+			&:after {
+				${mixins.transitionNormal("width")};
+				content: "";
+				width: 0;
+				height: 0.1rem;
+				background-color: ${colors.primary};
+				position: absolute;
+				bottom: -0.4rem;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
 		&:hover {
-			text-decoration: underline;
+			${PRegular} {
+				color: ${colors.primary};
+
+				&:after {
+					width: 100%;
+				}
+			}
 		}
 	}
 `;
@@ -110,8 +134,32 @@ export const OurServicesLinks = styled.div`
 	a {
 		text-decoration: none;
 
+		${PRegular} {
+			${mixins.transitionNormal("color")};
+			display: inline;
+			position: relative;
+
+			&:after {
+				${mixins.transitionNormal("width")};
+				content: "";
+				width: 0;
+				height: 0.1rem;
+				background-color: ${colors.primary};
+				position: absolute;
+				bottom: -0.4rem;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+
 		&:hover {
-			text-decoration: underline;
+			${PRegular} {
+				color: ${colors.primary};
+
+				&:after {
+					width: 100%;
+				}
+			}
 		}
 	}
 `;
