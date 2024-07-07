@@ -5,6 +5,8 @@ import { IHomepageBanner } from "../components/HomepageBanner";
 import { ILogoClouds } from "../components/LogoClouds";
 import { IOurServices } from "../components/OurServices";
 import { IOurStoryByNumbers } from "../components/OurStoryByNumbers";
+import { IPriceListBanner } from "../components/PriceListBanner";
+import { IPriceListSection } from "../components/PriceListSection";
 import { IProductsShowcase } from "../components/ProductsShowcase";
 import { IServicesSection } from "../components/ServicesSection";
 
@@ -28,4 +30,10 @@ export interface IHomeContentTypes {
 export interface IServicesContentTypes {
 	metadata: IMetadata;
 	servicesSection: IServicesSection;
+}
+
+export interface IPriceListContentTypes {
+	metadata: IMetadata;
+	priceListBanner: IPriceListBanner;
+	priceListSection: IPriceListSection;
 }
