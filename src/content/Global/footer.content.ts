@@ -29,17 +29,17 @@ export const footerHr = {
 		ourServices: [
 			{
 				key: 0,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_SERVICE_AND_REPAIR,
 				label: "Servisi i popravci"
 			},
 			{
 				key: 1,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_DESIGN_AND_INSTALLATION,
 				label: "Projektiranje i montaža"
 			},
 			{
 				key: 2,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_CONSULTING,
 				label: "Savjetovanje"
 			}
 		]
@@ -95,17 +95,17 @@ export const footerEn = {
 		ourServices: [
 			{
 				key: 0,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_SERVICE_AND_REPAIR,
 				label: "Services and Repairs"
 			},
 			{
 				key: 1,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_DESIGN_AND_INSTALLATION,
 				label: "Design and Installation"
 			},
 			{
 				key: 2,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_CONSULTING,
 				label: "Consulting"
 			}
 		]
@@ -161,17 +161,17 @@ export const footerIt = {
 		ourServices: [
 			{
 				key: 0,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_SERVICE_AND_REPAIR,
 				label: "Servizi e Riparazioni"
 			},
 			{
 				key: 1,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_DESIGN_AND_INSTALLATION,
 				label: "Progettazione e Installazione"
 			},
 			{
 				key: 2,
-				href: Routes.SERVICES,
+				href: Routes.SERVICES_CONSULTING,
 				label: "Consulenza"
 			}
 		]

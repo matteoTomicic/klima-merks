@@ -1,10 +1,8 @@
 import Image, { ImageProps } from "next/image";
-import { IconType } from "react-icons";
-import { BiSupport } from "react-icons/bi";
-import { FaArrowRight, FaTools } from "react-icons/fa";
-import { FaGear } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 import { colors } from "../../global.styles";
+import getReactIcon from "../../helpers/getReactIcon.helper";
 import { Footnote, H2, PRegular, Subtitle1 } from "../../styles/shared.styles";
 import Section from "../LayoutComponents/Section";
 import {
@@ -18,8 +16,6 @@ import {
 	ServiceLinksWrapper,
 	StyledContainer
 } from "./styles";
-
-type IconsMap = Record<string, IconType>;
 
 interface IServiceButton {
 	href: string;
@@ -43,12 +39,6 @@ export interface IOurServices {
 }
 
 export default function OurServices({ heading, services }: IOurServices) {
-	const iconsMap: IconsMap = {
-		BiSupport,
-		FaGear,
-		FaTools
-	};
-
 	return (
 		<Section style={{ backgroundColor: colors.gray }}>
 			<StyledContainer>
@@ -56,7 +46,7 @@ export default function OurServices({ heading, services }: IOurServices) {
 
 				<ServiceGrid>
 					{services.map((service) => {
-						const ServiceIcon = iconsMap[service.icon];
+						const ServiceIcon = getReactIcon(service.icon);
 
 						return (
 							<ServiceCard key={service.key}>

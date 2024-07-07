@@ -131,14 +131,11 @@ export const ProductImage = styled.div<IStyledProductImageProps>`
 	}
 
 	.product-image {
+		${mixins.maskImage("bottom")};
 		border-radius: 1rem;
-		mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 
 		${device.up.TABLET} {
-			mask-image: ${({ $reverseImageMask }) =>
-				$reverseImageMask
-					? "linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))"
-					: "linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))"};
+			${({ $reverseImageMask }) => ($reverseImageMask ? mixins.maskImage("right") : mixins.maskImage("left"))};
 		}
 	}
 `;

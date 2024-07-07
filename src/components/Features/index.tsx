@@ -1,14 +1,10 @@
 import Image from "next/image";
-import { IconType } from "react-icons";
-import { FaToolbox, FaTools } from "react-icons/fa";
-import { MdHandshake, MdVerified } from "react-icons/md";
 
 import { colors } from "../../global.styles";
+import getReactIcon from "../../helpers/getReactIcon.helper";
 import { H2, Subtitle1, Subtitle2 } from "../../styles/shared.styles";
 import Section from "../LayoutComponents/Section";
 import { FeatureItem, FeaturesImage, FeaturesList, IntroText, StyledContainer } from "./styles";
-
-type IconsMap = Record<string, IconType>;
 
 interface IFeatureItem {
 	icon: string;
@@ -25,13 +21,6 @@ export interface IFeatures {
 }
 
 function Features({ features, heading, imageAltText, introText, subHeading }: IFeatures) {
-	const iconsMap: IconsMap = {
-		FaToolbox,
-		FaTools,
-		MdHandshake,
-		MdVerified
-	};
-
 	return (
 		<Section style={{ backgroundColor: colors.darkSection }}>
 			<StyledContainer>
@@ -45,7 +34,7 @@ function Features({ features, heading, imageAltText, introText, subHeading }: IF
 				</FeaturesImage>
 				<FeaturesList>
 					{features.map((feature) => {
-						const FeatureIcon = iconsMap[feature.icon];
+						const FeatureIcon = getReactIcon(feature.icon);
 
 						return (
 							<FeatureItem key={feature.key}>

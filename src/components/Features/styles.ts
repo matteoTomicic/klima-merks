@@ -55,8 +55,8 @@ export const FeaturesImage = styled.div`
 	}
 
 	img {
+		${mixins.maskImage("bottom")};
 		display: block;
-		mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 	}
 `;
 

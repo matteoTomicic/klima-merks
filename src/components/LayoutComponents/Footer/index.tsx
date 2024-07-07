@@ -1,8 +1,7 @@
 import Image, { ImageProps } from "next/image";
 import Link from "next/link";
-import { IconType } from "react-icons";
-import { FaGoogle, FaInstagram } from "react-icons/fa";
 
+import getReactIcon from "../../../helpers/getReactIcon.helper";
 import { Footnote, PRegular, Subtitle2 } from "../../../styles/shared.styles";
 import { INavigationItem } from "../shared.types";
 import {
@@ -20,8 +19,6 @@ import {
 	SocialMediaItem,
 	SocialMediaItems
 } from "./styles";
-
-type IconsMap = Record<string, IconType>;
 
 interface ISocialMediaItem {
 	href: string;
@@ -67,11 +64,6 @@ function Footer({
 	ourServicesCategory,
 	socialMediaItems
 }: IFooter) {
-	const iconsMap: IconsMap = {
-		FaGoogle,
-		FaInstagram
-	};
-
 	return (
 		<FooterStyled as="footer">
 			<ContainerStyled>
@@ -80,7 +72,7 @@ function Footer({
 					<PRegular>{companyMission}</PRegular>
 					<SocialMediaItems>
 						{socialMediaItems.map((socialMediaItem) => {
-							const SocialMediaIcon = iconsMap[socialMediaItem.icon];
+							const SocialMediaIcon = getReactIcon(socialMediaItem.icon);
 
 							return (
 								<SocialMediaItem href={socialMediaItem.href} key={socialMediaItem.key} rel="noreferrer" target="_blank">
