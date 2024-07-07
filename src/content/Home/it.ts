@@ -116,7 +116,7 @@ const content: IHomeContentTypes = {
 					{
 						key: 1,
 						text: "Dettagli",
-						href: Routes.SERVICES
+						href: Routes.SERVICES_SERVICE_AND_REPAIR
 					}
 				]
 			},
@@ -140,7 +140,7 @@ const content: IHomeContentTypes = {
 					{
 						key: 1,
 						text: "Dettagli",
-						href: Routes.SERVICES
+						href: Routes.SERVICES_DESIGN_AND_INSTALLATION
 					}
 				]
 			},
@@ -164,7 +164,7 @@ const content: IHomeContentTypes = {
 					{
 						key: 1,
 						text: "Dettagli",
-						href: Routes.SERVICES
+						href: Routes.SERVICES_CONSULTING
 					}
 				]
 			}

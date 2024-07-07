@@ -39,7 +39,9 @@ export const device = {
 
 export const mixins = {
 	spacing: (spacingNumber: number) => `${(spacingNumber * 4) / 10}rem`,
-	transitionNormal: (transitionProperty: string) => `transition: ${transitionProperty} 0.25s ease-in-out`
+	transitionNormal: (transitionProperty: string) => `transition: ${transitionProperty} 0.25s ease-in-out`,
+	maskImage: (direction: "bottom" | "left" | "right" | "top") =>
+		`mask-image: linear-gradient(to ${direction}, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))`
 };
 
 export default styled.createGlobalStyle`

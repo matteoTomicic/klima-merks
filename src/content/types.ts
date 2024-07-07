@@ -6,6 +6,7 @@ import { ILogoClouds } from "../components/LogoClouds";
 import { IOurServices } from "../components/OurServices";
 import { IOurStoryByNumbers } from "../components/OurStoryByNumbers";
 import { IProductsShowcase } from "../components/ProductsShowcase";
+import { IServicesSection } from "../components/ServicesSection";
 
 interface IMetadata {
 	description: string;
@@ -22,4 +23,9 @@ export interface IHomeContentTypes {
 	ourServicesContent: IOurServices;
 	productsShowcaseContent: IProductsShowcase;
 	ourStoryByNumbersContent: IOurStoryByNumbers;
+}
+
+export interface IServicesContentTypes {
+	metadata: IMetadata;
+	servicesSection: IServicesSection;
 }
