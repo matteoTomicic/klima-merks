@@ -191,6 +191,8 @@ function ServicesSection({ heading, services, subtitle }: IServicesSection) {
 								<Image
 									alt={service.image.alt}
 									height={service.image.height}
+									priority={service.key === 0}
+									quality={100}
 									src={service.image.src}
 									width={service.image.width}
 								/>

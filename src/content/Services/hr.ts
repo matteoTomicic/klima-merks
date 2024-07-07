@@ -87,8 +87,8 @@ const content: IServicesContentTypes = {
 				image: {
 					src: "/images/services/services-and-repairs.jpg",
 					alt: "Serviseri Vaillant u akciji, odlaze na servisiranje uređaja",
-					width: 862,
-					height: 485
+					width: 625,
+					height: 352
 				}
 			},
 			{
@@ -153,8 +153,8 @@ const content: IServicesContentTypes = {
 				image: {
 					src: "/images/services/design-and-installation.jpg",
 					alt: "Inženjeri Vaillanta pri izradi projekta",
-					width: 1280,
-					height: 720
+					width: 625,
+					height: 352
 				}
 			},
 			{
@@ -219,8 +219,8 @@ const content: IServicesContentTypes = {
 				image: {
 					src: "/images/services/consulting.jpg",
 					alt: "Zaposlenik Vaillanta u konzultaciji preko telefona",
-					width: 935,
-					height: 526
+					width: 625,
+					height: 352
 				}
 			}
 		]

@@ -86,8 +86,8 @@ const content: IServicesContentTypes = {
 				image: {
 					src: "/images/services/services-and-repairs.jpg",
 					alt: "Vaillant technicians in action, heading for service",
-					width: 862,
-					height: 485
+					width: 625,
+					height: 352
 				}
 			},
 			{
@@ -152,8 +152,8 @@ const content: IServicesContentTypes = {
 				image: {
 					src: "/images/services/design-and-installation.jpg",
 					alt: "Vaillant engineers designing",
-					width: 1280,
-					height: 720
+					width: 625,
+					height: 352
 				}
 			},
 			{
@@ -219,8 +219,8 @@ const content: IServicesContentTypes = {
 				image: {
 					src: "/images/services/consulting.jpg",
 					alt: "Vaillant employee with headphones consulting someone",
-					width: 935,
-					height: 526
+					width: 625,
+					height: 352
 				}
 			}
 		]
