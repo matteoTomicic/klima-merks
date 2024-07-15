@@ -66,7 +66,7 @@ export const LanguagesDropdown = styled.div`
 	}
 
 	&.opened {
-		height: 31rem;
+		height: 29rem;
 
 		${device.up.LAPTOP} {
 			padding: ${mixins.spacing(4)};

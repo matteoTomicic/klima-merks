@@ -45,7 +45,7 @@ export const NavigationItems = styled.div`
 	flex-direction: column;
 
 	&.shown {
-		height: 31rem;
+		height: 29rem;
 	}
 
 	${device.up.LAPTOP} {

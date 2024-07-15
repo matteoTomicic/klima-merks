@@ -62,6 +62,10 @@ export const footerHr = {
 			{
 				key: 3,
 				label: "Hrvatska"
+			},
+			{
+				key: 4,
+				label: "+385 99 813 1891"
 			}
 		]
 	},
@@ -128,6 +132,10 @@ export const footerEn = {
 			{
 				key: 3,
 				label: "Croatia"
+			},
+			{
+				key: 4,
+				label: "+385 99 813 1891"
 			}
 		]
 	},
@@ -194,6 +202,10 @@ export const footerIt = {
 			{
 				key: 3,
 				label: "Croazia"
+			},
+			{
+				key: 4,
+				label: "+385 99 813 1891"
 			}
 		]
 	},

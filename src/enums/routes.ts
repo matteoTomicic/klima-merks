@@ -1,5 +1,4 @@
 enum Routes {
-	ABOUT_US = "/about-us",
 	CONTACT = "/contact",
 	HOME = "/",
 	OUR_WORKS = "/our-works",

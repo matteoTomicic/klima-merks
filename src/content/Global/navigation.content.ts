@@ -29,13 +29,8 @@ export const navigationHr = {
 			label: "Cjenik"
 		},
 		{
-			href: Routes.ABOUT_US,
-			key: 4,
-			label: "O nama"
-		},
-		{
 			href: Routes.CONTACT,
-			key: 5,
+			key: 4,
 			label: "Kontakt"
 		}
 	]
@@ -70,13 +65,8 @@ export const navigationEn = {
 			label: "Price list"
 		},
 		{
-			href: Routes.ABOUT_US,
-			key: 4,
-			label: "About Us"
-		},
-		{
 			href: Routes.CONTACT,
-			key: 5,
+			key: 4,
 			label: "Contact"
 		}
 	]
@@ -111,13 +101,8 @@ export const navigationIt = {
 			label: "Listino prezzi"
 		},
 		{
-			href: Routes.ABOUT_US,
-			key: 4,
-			label: "Chi siamo"
-		},
-		{
 			href: Routes.CONTACT,
-			key: 5,
+			key: 4,
 			label: "Contatto"
 		}
 	]
