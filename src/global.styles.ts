@@ -33,7 +33,8 @@ export const device = {
 		TABLET: "@media (min-width: 768px)",
 		LAPTOP: "@media (min-width: 992px)",
 		DT_XL: "@media (min-width: 1200px)",
-		DT_XXL: "@media (min-width: 1400px)"
+		DT_XXL: "@media (min-width: 1400px)",
+		DT_4K: "@media (min-width: 2560px)"
 	}
 };
 
@@ -41,7 +42,22 @@ export const mixins = {
 	spacing: (spacingNumber: number) => `${(spacingNumber * 4) / 10}rem`,
 	transitionNormal: (transitionProperty: string) => `transition: ${transitionProperty} 0.25s ease-in-out`,
 	maskImage: (direction: "bottom" | "left" | "right" | "top") =>
-		`mask-image: linear-gradient(to ${direction}, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))`
+		`mask-image: linear-gradient(to ${direction}, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))`,
+	linkUnderline: (color: string) => `
+		text-decoration: none;
+		position: relative;
+
+		&:after {
+			content: "";
+			width: 100%;
+			height: 0.1rem;
+			background-color: ${color};
+			opacity: 0.5;
+			position: absolute;
+			left: 0;
+			bottom: 0.1rem;
+		}
+	`
 };
 
 export default styled.createGlobalStyle`

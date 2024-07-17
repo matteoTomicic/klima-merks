@@ -1,6 +1,7 @@
 /* eslint-disable perfectionist/sort-objects */
 /* eslint-disable perfectionist/sort-object-types */
 
+import Constants from "../../enums/constants";
 import Routes from "../../enums/routes";
 import { IPriceListContentTypes } from "../types";
 
@@ -32,7 +33,7 @@ const content: IPriceListContentTypes = {
 			},
 			contactNumberLink: {
 				href: "tel: 00385998131891",
-				label: "+385 99 813 1891"
+				label: Constants.PHONE_NUMBER
 			}
 		},
 		prefixDisclaimer:
@@ -48,7 +49,7 @@ const content: IPriceListContentTypes = {
 					label: "Service"
 				},
 				{
-					key: 0,
+					key: 2,
 					label: "Price with VAT"
 				}
 			],

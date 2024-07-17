@@ -49,7 +49,8 @@ export const footerHr = {
 		contact: [
 			{
 				key: 0,
-				label: "Klima - Merks d.o.o."
+				label: "Klima - Merks d.o.o.",
+				icon: "PiBuildings"
 			},
 			{
 				key: 1,
@@ -65,7 +66,19 @@ export const footerHr = {
 			},
 			{
 				key: 4,
-				label: "+385 99 813 1891"
+				label: Constants.PHONE_NUMBER,
+				icon: "PiPhone",
+				link: {
+					href: "tel:00385998131891"
+				}
+			},
+			{
+				key: 5,
+				label: Constants.MAIL,
+				icon: "PiEnvelope",
+				link: {
+					href: `mailto:${Constants.MAIL}`
+				}
 			}
 		]
 	},
@@ -119,7 +132,8 @@ export const footerEn = {
 		contact: [
 			{
 				key: 0,
-				label: "Klima - Merks LCC"
+				label: "Klima - Merks LCC",
+				icon: "PiBuildings"
 			},
 			{
 				key: 1,
@@ -135,7 +149,19 @@ export const footerEn = {
 			},
 			{
 				key: 4,
-				label: "+385 99 813 1891"
+				label: Constants.PHONE_NUMBER,
+				icon: "PiPhone",
+				link: {
+					href: "tel:00385998131891"
+				}
+			},
+			{
+				key: 5,
+				label: Constants.MAIL,
+				icon: "PiEnvelope",
+				link: {
+					href: `mailto:${Constants.MAIL}`
+				}
 			}
 		]
 	},
@@ -189,7 +215,8 @@ export const footerIt = {
 		contact: [
 			{
 				key: 0,
-				label: "Klima - Merks S.r.l."
+				label: "Klima - Merks S.r.l.",
+				icon: "PiBuildings"
 			},
 			{
 				key: 1,
@@ -205,7 +232,19 @@ export const footerIt = {
 			},
 			{
 				key: 4,
-				label: "+385 99 813 1891"
+				label: Constants.PHONE_NUMBER,
+				icon: "PiPhone",
+				link: {
+					href: "tel:00385998131891"
+				}
+			},
+			{
+				key: 5,
+				label: Constants.MAIL,
+				icon: "PiEnvelope",
+				link: {
+					href: `mailto:${Constants.MAIL}`
+				}
 			}
 		]
 	},

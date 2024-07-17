@@ -178,6 +178,20 @@ export const ContactInfo = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: ${mixins.spacing(1)};
+
+	a {
+		${mixins.linkUnderline(colors.text.primary)};
+	}
+`;
+
+export const ContactInfoWithIcon = styled.div`
+	display: flex;
+	align-items: center;
+	gap: ${mixins.spacing(2)};
+`;
+
+export const ContactInfoWithoutIcon = styled.div`
+	padding-left: ${mixins.spacing(6)}; // icon width + gap, to indent items w/o icons
 `;
 
 export const FooterCopyright = styled.div`

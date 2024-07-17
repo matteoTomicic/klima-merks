@@ -5,6 +5,7 @@ import { FaCircleInfo, FaGear } from "react-icons/fa6";
 import { FiLifeBuoy } from "react-icons/fi";
 import { GiEcology, GiGears, GiTechnoHeart } from "react-icons/gi";
 import { MdHandshake, MdVerified } from "react-icons/md";
+import { PiBuildings, PiEnvelope, PiPhone } from "react-icons/pi";
 
 type IconsMap = Record<string, IconType>;
 
@@ -27,7 +28,10 @@ const getReactIcon = (iconName: string): IconType => {
 		GiGears,
 		GiTechnoHeart,
 		MdHandshake,
-		MdVerified
+		MdVerified,
+		PiBuildings,
+		PiEnvelope,
+		PiPhone
 	};
 
 	const IconComponent = iconsMap[iconName];

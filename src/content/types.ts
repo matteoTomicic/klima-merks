@@ -1,6 +1,7 @@
 /* eslint-disable perfectionist/sort-interfaces */
 
 import { IAboutUs } from "../components/AboutUs";
+import { IContactUs } from "../components/ContactUs";
 import { IFeatures } from "../components/Features";
 import { IHomepageBanner } from "../components/HomepageBanner";
 import { ILogoClouds } from "../components/LogoClouds";
@@ -42,4 +43,8 @@ export interface IPriceListContentTypes extends IMetadata {
 export interface IOurWorksContentTypes extends IMetadata {
 	aboutUs: IAboutUs;
 	ourWorksSection: IOurWorksSection;
+}
+
+export interface IContactContentTypes extends IMetadata {
+	contactUs: IContactUs;
 }

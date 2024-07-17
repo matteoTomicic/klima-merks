@@ -7,6 +7,8 @@ import { INavigationItem } from "../shared.types";
 import {
 	Contact,
 	ContactInfo,
+	ContactInfoWithIcon,
+	ContactInfoWithoutIcon,
 	ContainerStyled,
 	FooterCopyright,
 	FooterHead,
@@ -33,8 +35,12 @@ interface IService {
 }
 
 interface IContact {
+	icon?: string;
 	key: number;
 	label: string;
+	link?: {
+		href: string;
+	};
 }
 
 interface IFooter {
@@ -109,9 +115,32 @@ function Footer({
 					<Contact>
 						<Subtitle2>{contactCategory.title}</Subtitle2>
 						<ContactInfo>
-							{contactCategory.contact.map((contact) => (
-								<PRegular key={contact.key}>{contact.label}</PRegular>
-							))}
+							{contactCategory.contact.map((contact) => {
+								const ContactIcon = getReactIcon(contact.icon ?? "");
+
+								return contact.icon ? (
+									<ContactInfoWithIcon>
+										<ContactIcon />
+										{contact.link ? (
+											<a href={contact.link.href}>
+												<PRegular key={contact.key}>{contact.label}</PRegular>
+											</a>
+										) : (
+											<PRegular key={contact.key}>{contact.label}</PRegular>
+										)}
+									</ContactInfoWithIcon>
+								) : (
+									<ContactInfoWithoutIcon>
+										{contact.link ? (
+											<a href={contact.link.href}>
+												<PRegular key={contact.key}>{contact.label}</PRegular>
+											</a>
+										) : (
+											<PRegular key={contact.key}>{contact.label}</PRegular>
+										)}
+									</ContactInfoWithoutIcon>
+								);
+							})}
 						</ContactInfo>
 					</Contact>
 				</FooterLinks>
