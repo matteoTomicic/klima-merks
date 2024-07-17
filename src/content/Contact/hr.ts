@@ -33,14 +33,22 @@ const content: IContactContentTypes = {
 			},
 			{
 				key: 1,
-				labelRow1: Constants.PHONE_NUMBER,
+				labelRow1: Constants.PHONE_NUMBER_BORIS,
 				link: {
-					href: "tel:00385998131891"
+					href: Constants.PHONE_NUMBER_BORIS_HREF
 				},
 				icon: "PiPhone"
 			},
 			{
 				key: 2,
+				labelRow1: Constants.PHONE_NUMBER_LUKA,
+				link: {
+					href: Constants.PHONE_NUMBER_LUKA_HREF
+				},
+				icon: "PiPhone"
+			},
+			{
+				key: 3,
 				labelRow1: Constants.MAIL,
 				link: {
 					href: `mailto:${Constants.MAIL}`

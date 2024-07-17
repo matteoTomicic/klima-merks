@@ -119,24 +119,24 @@ function Footer({
 								const ContactIcon = getReactIcon(contact.icon ?? "");
 
 								return contact.icon ? (
-									<ContactInfoWithIcon>
+									<ContactInfoWithIcon key={contact.key}>
 										<ContactIcon />
 										{contact.link ? (
 											<a href={contact.link.href}>
-												<PRegular key={contact.key}>{contact.label}</PRegular>
+												<PRegular>{contact.label}</PRegular>
 											</a>
 										) : (
-											<PRegular key={contact.key}>{contact.label}</PRegular>
+											<PRegular>{contact.label}</PRegular>
 										)}
 									</ContactInfoWithIcon>
 								) : (
-									<ContactInfoWithoutIcon>
+									<ContactInfoWithoutIcon key={contact.key}>
 										{contact.link ? (
 											<a href={contact.link.href}>
-												<PRegular key={contact.key}>{contact.label}</PRegular>
+												<PRegular>{contact.label}</PRegular>
 											</a>
 										) : (
-											<PRegular key={contact.key}>{contact.label}</PRegular>
+											<PRegular>{contact.label}</PRegular>
 										)}
 									</ContactInfoWithoutIcon>
 								);

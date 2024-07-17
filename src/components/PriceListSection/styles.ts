@@ -22,7 +22,11 @@ export const ContactInfoWrapper = styled.div`
 	${device.up.MOBILE_LANDSCAPE} {
 		flex-direction: row;
 		align-items: center;
-		gap: ${mixins.spacing(10)};
+		flex-wrap: wrap;
+	}
+
+	${device.up.LAPTOP} {
+		gap: ${mixins.spacing(8)};
 	}
 `;
 
@@ -38,6 +42,10 @@ export const CtaButtonWrapper = styled.div`
 		display: flex;
 		align-items: center;
 		gap: ${mixins.spacing(2)};
+	}
+
+	${device.up.MOBILE_LANDSCAPE} {
+		width: 100%;
 	}
 `;
 

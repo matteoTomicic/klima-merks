@@ -66,14 +66,22 @@ export const footerHr = {
 			},
 			{
 				key: 4,
-				label: Constants.PHONE_NUMBER,
+				label: Constants.PHONE_NUMBER_BORIS,
 				icon: "PiPhone",
 				link: {
-					href: "tel:00385998131891"
+					href: Constants.PHONE_NUMBER_BORIS_HREF
 				}
 			},
 			{
 				key: 5,
+				label: Constants.PHONE_NUMBER_LUKA,
+				icon: "PiPhone",
+				link: {
+					href: Constants.PHONE_NUMBER_LUKA_HREF
+				}
+			},
+			{
+				key: 6,
 				label: Constants.MAIL,
 				icon: "PiEnvelope",
 				link: {
@@ -149,14 +157,22 @@ export const footerEn = {
 			},
 			{
 				key: 4,
-				label: Constants.PHONE_NUMBER,
+				label: Constants.PHONE_NUMBER_BORIS,
 				icon: "PiPhone",
 				link: {
-					href: "tel:00385998131891"
+					href: Constants.PHONE_NUMBER_BORIS_HREF
 				}
 			},
 			{
 				key: 5,
+				label: Constants.PHONE_NUMBER_LUKA,
+				icon: "PiPhone",
+				link: {
+					href: Constants.PHONE_NUMBER_LUKA_HREF
+				}
+			},
+			{
+				key: 6,
 				label: Constants.MAIL,
 				icon: "PiEnvelope",
 				link: {
@@ -232,14 +248,22 @@ export const footerIt = {
 			},
 			{
 				key: 4,
-				label: Constants.PHONE_NUMBER,
+				label: Constants.PHONE_NUMBER_BORIS,
 				icon: "PiPhone",
 				link: {
-					href: "tel:00385998131891"
+					href: Constants.PHONE_NUMBER_BORIS_HREF
 				}
 			},
 			{
 				key: 5,
+				label: Constants.PHONE_NUMBER_LUKA,
+				icon: "PiPhone",
+				link: {
+					href: Constants.PHONE_NUMBER_LUKA_HREF
+				}
+			},
+			{
+				key: 6,
 				label: Constants.MAIL,
 				icon: "PiEnvelope",
 				link: {

@@ -31,10 +31,18 @@ const content: IPriceListContentTypes = {
 				href: Routes.CONTACT,
 				label: "Contact Page"
 			},
-			contactNumberLink: {
-				href: "tel: 00385998131891",
-				label: Constants.PHONE_NUMBER
-			}
+			contactNumberLinks: [
+				{
+					key: 0,
+					href: Constants.PHONE_NUMBER_BORIS_HREF,
+					label: Constants.PHONE_NUMBER_BORIS
+				},
+				{
+					key: 1,
+					href: Constants.PHONE_NUMBER_LUKA_HREF,
+					label: Constants.PHONE_NUMBER_LUKA
+				}
+			]
 		},
 		prefixDisclaimer:
 			"*Prices are valid for services within the basic activity zone (Istria County (up to 20 km distance from headquarters))",

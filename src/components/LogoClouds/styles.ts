@@ -26,7 +26,7 @@ export const LogosWrapper = styled.div`
 	gap: ${mixins.spacing(4)} ${mixins.spacing(5)};
 
 	${device.up.DT_XXL} {
-		gap: ${mixins.spacing(7)};
+		gap: ${mixins.spacing(15)};
 	}
 
 	.logo {

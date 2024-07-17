@@ -33,26 +33,6 @@ const content: IHomeContentTypes = {
 			},
 			{
 				key: 1,
-				src: "/images/homepage/awb-logo.png",
-				alt: "AWB logo"
-			},
-			{
-				key: 2,
-				src: "/images/homepage/demir-dokum-logo.png",
-				alt: "Demir Dokum logo"
-			},
-			{
-				key: 3,
-				src: "/images/homepage/glow-worm-logo.png",
-				alt: "Glow Worm logo"
-			},
-			{
-				key: 4,
-				src: "/images/homepage/protherm-logo.png",
-				alt: "Protherm logo"
-			},
-			{
-				key: 5,
 				src: "/images/homepage/saunier-duval-logo.png",
 				alt: "Saunier Duval logo"
 			}

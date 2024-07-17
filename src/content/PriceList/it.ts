@@ -32,10 +32,18 @@ const content: IPriceListContentTypes = {
 				href: Routes.CONTACT,
 				label: "Pagina dei Contatti"
 			},
-			contactNumberLink: {
-				href: "tel: 00385998131891",
-				label: Constants.PHONE_NUMBER
-			}
+			contactNumberLinks: [
+				{
+					key: 0,
+					href: Constants.PHONE_NUMBER_BORIS_HREF,
+					label: Constants.PHONE_NUMBER_BORIS
+				},
+				{
+					key: 1,
+					href: Constants.PHONE_NUMBER_LUKA_HREF,
+					label: Constants.PHONE_NUMBER_LUKA
+				}
+			]
 		},
 		prefixDisclaimer:
 			"*I prezzi sono validi per i servizi all'interno della zona di attività di base (Provincia dell'Istria (fino a 20 km di distanza dalla sede))",
