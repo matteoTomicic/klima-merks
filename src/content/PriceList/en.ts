@@ -64,103 +64,103 @@ const content: IPriceListContentTypes = {
 					key: 1,
 					serviceNumber: 2,
 					serviceLabel: "Regular annual service of combi and circo boilers",
-					servicePrice: "€89.00"
+					servicePrice: "€90.00"
 				},
 				{
 					key: 2,
 					serviceNumber: 3,
 					serviceLabel: "Regular annual service of condensing boilers",
-					servicePrice: "€99.00"
+					servicePrice: "€100.00"
 				},
 				{
 					key: 3,
 					serviceNumber: 4,
 					serviceLabel: "Combi boiler service with descaling",
-					servicePrice: "€119.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 4,
 					serviceNumber: 5,
 					serviceLabel: "Complete service of VUI device with disassembly (from minimum)",
-					servicePrice: "€395.00"
+					servicePrice: "€450.00"
 				},
 				{
 					key: 5,
 					serviceNumber: 6,
 					serviceLabel: "Service of VSC gas condensing boiler",
-					servicePrice: "€133.00"
+					servicePrice: "€140.00"
 				},
 				{
 					key: 6,
 					serviceNumber: 7,
 					serviceLabel: "Service of gas boiler",
-					servicePrice: "€89.00"
+					servicePrice: "€90.00"
 				},
 				{
 					key: 7,
 					serviceNumber: 8,
 					serviceLabel: "Service of accumulation boiler",
-					servicePrice: "€89.00"
+					servicePrice: "€90.00"
 				},
 				{
 					key: 8,
 					serviceNumber: 9,
 					serviceLabel: "Service of accumulation boiler with descaling",
-					servicePrice: "€149.00"
+					servicePrice: "€150.00"
 				},
 				{
 					key: 9,
 					serviceNumber: 10,
 					serviceLabel: "Service of instantaneous water heater",
-					servicePrice: "€79.00"
+					servicePrice: "€80.00"
 				},
 				{
 					key: 10,
 					serviceNumber: 11,
 					serviceLabel: "Service of instantaneous water heater with descaling",
-					servicePrice: "€99.00"
+					servicePrice: "€100.00"
 				},
 				{
 					key: 11,
 					serviceNumber: 12,
 					serviceLabel: "Commissioning of conventional gas devices",
-					servicePrice: "€79.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 12,
 					serviceNumber: 13,
 					serviceLabel: "Commissioning of condensing combi boiler",
-					servicePrice: "€89.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 13,
 					serviceNumber: 14,
 					serviceLabel: "Commissioning of condensing boiler (PEEC)",
-					servicePrice: "€109.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 14,
 					serviceNumber: 15,
 					serviceLabel: "Commissioning of condensing circo boiler",
-					servicePrice: "€109.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 15,
 					serviceNumber: 16,
 					serviceLabel: "Programming of digital room thermostat",
-					servicePrice: "€55.00"
+					servicePrice: "€50.00"
 				},
 				{
 					key: 16,
 					serviceNumber: 17,
 					serviceLabel: "Programming of WiFi room thermostat",
-					servicePrice: "€79.00"
+					servicePrice: "€80.00"
 				},
 				{
 					key: 17,
 					serviceNumber: 18,
 					serviceLabel: "Programming and addressing of automation",
-					servicePrice: "€99.00"
+					servicePrice: "€100.00"
 				}
 			]
 		},
