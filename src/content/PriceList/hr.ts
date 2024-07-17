@@ -64,103 +64,103 @@ const content: IPriceListContentTypes = {
 					key: 1,
 					serviceNumber: 2,
 					serviceLabel: "Redovan godišnji servis kombi i cirko bojlera",
-					servicePrice: "€89.00"
+					servicePrice: "€90.00"
 				},
 				{
 					key: 2,
 					serviceNumber: 3,
 					serviceLabel: "Redovan godišnji servis kondenzacijskog bojlera",
-					servicePrice: "€99.00"
+					servicePrice: "€100.00"
 				},
 				{
 					key: 3,
 					serviceNumber: 4,
 					serviceLabel: "Servis kombi bojlera s čišćenjem od kamenca",
-					servicePrice: "€119.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 4,
 					serviceNumber: 5,
 					serviceLabel: "Kompletan servis VUI uređaja sa demontažom (od minimalno)",
-					servicePrice: "€395.00"
+					servicePrice: "€450.00"
 				},
 				{
 					key: 5,
 					serviceNumber: 6,
 					serviceLabel: "Servis plinskog kondenzacijskog kotla VSC",
-					servicePrice: "€133.00"
+					servicePrice: "€140.00"
 				},
 				{
 					key: 6,
 					serviceNumber: 7,
 					serviceLabel: "Servis plinskog kotla",
-					servicePrice: "€89.00"
+					servicePrice: "€90.00"
 				},
 				{
 					key: 7,
 					serviceNumber: 8,
 					serviceLabel: "Servis akumulacijskog bojlera",
-					servicePrice: "€89.00"
+					servicePrice: "€90.00"
 				},
 				{
 					key: 8,
 					serviceNumber: 9,
 					serviceLabel: "Servis akumulacijskog bojlera s čišćenjem kamenca",
-					servicePrice: "€149.00"
+					servicePrice: "€150.00"
 				},
 				{
 					key: 9,
 					serviceNumber: 10,
 					serviceLabel: "Servis protočnog bojlera",
-					servicePrice: "€79.00"
+					servicePrice: "€80.00"
 				},
 				{
 					key: 10,
 					serviceNumber: 11,
 					serviceLabel: "Servis protočnog bojlera sa čišćenjem kamenca",
-					servicePrice: "€99.00"
+					servicePrice: "€100.00"
 				},
 				{
 					key: 11,
 					serviceNumber: 12,
 					serviceLabel: "Puštanje u rad konvencionalnih plinskih uređaja",
-					servicePrice: "€79.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 12,
 					serviceNumber: 13,
 					serviceLabel: "Puštanje u rad kondenzacijskog kombi bojlera",
-					servicePrice: "€89.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 13,
 					serviceNumber: 14,
 					serviceLabel: "Puštanje u rad kondenzacijskog bojlera (PEEC)",
-					servicePrice: "€109.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 14,
 					serviceNumber: 15,
 					serviceLabel: "Puštanje u rad kondenzacijskog cirko bojlera",
-					servicePrice: "€109.00"
+					servicePrice: "€120.00"
 				},
 				{
 					key: 15,
 					serviceNumber: 16,
 					serviceLabel: "Programiranje digitalnog sobnog termostata",
-					servicePrice: "€55.00"
+					servicePrice: "€50.00"
 				},
 				{
 					key: 16,
 					serviceNumber: 17,
 					serviceLabel: "Programiranje WiFi sobnog termostata",
-					servicePrice: "€79.00"
+					servicePrice: "€80.00"
 				},
 				{
 					key: 17,
 					serviceNumber: 18,
 					serviceLabel: "Programiranje i adresiranje automatike",
-					servicePrice: "€99.00"
+					servicePrice: "€100.00"
 				}
 			]
 		},
