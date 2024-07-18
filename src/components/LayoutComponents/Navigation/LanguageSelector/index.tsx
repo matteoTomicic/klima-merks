@@ -56,7 +56,7 @@ export default function LanguageSelector({
 	const [selectedLanguageWrapperRef] = useOutsideClickRef(closeLanguageDropdown);
 
 	return (
-		<LanguageSelectorStyled>
+		<LanguageSelectorStyled as="li">
 			<SelectedLanguageImageWrapper
 				$isLanguagesDropdownOpen={isLanguagesDropdownOpen}
 				onClick={handleLanguagesDropdownOpening}

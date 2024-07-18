@@ -18,6 +18,7 @@ import {
 } from "./styles";
 
 interface IServiceButton {
+	ariaLabel: string;
 	href: string;
 	key: number;
 	text: string;
@@ -66,7 +67,7 @@ export default function OurServices({ heading, services }: IOurServices) {
 									</ServiceDetails>
 									<ServiceLinksWrapper>
 										{service.serviceButtons.map((button) => (
-											<ServiceLink href={button.href} key={button.key} passHref>
+											<ServiceLink aria-label={button.ariaLabel} href={button.href} key={button.key} passHref>
 												<PRegular>{button.text}</PRegular>
 												<FaArrowRight className="service-link-icon" />
 											</ServiceLink>

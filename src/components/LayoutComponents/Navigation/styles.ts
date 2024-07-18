@@ -84,7 +84,7 @@ export const NavigationItemsList = styled.ul`
 	}
 `;
 
-export const NavigationItem = styled.span<INavigationItem>`
+export const NavigationItem = styled.li<INavigationItem>`
 	position: relative;
 
 	&:after {

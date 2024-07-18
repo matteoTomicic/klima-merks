@@ -91,12 +91,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Price List",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Services and Repairs pricelist"
 					},
 					{
 						key: 1,
 						text: "Learn More",
-						href: Routes.SERVICES_SERVICE_AND_REPAIR
+						href: Routes.SERVICES_SERVICE_AND_REPAIR,
+						ariaLabel: "Services and Repairs"
 					}
 				]
 			},
@@ -115,12 +117,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Price List",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Design and Installation pricelist"
 					},
 					{
 						key: 1,
 						text: "Learn More",
-						href: Routes.SERVICES_DESIGN_AND_INSTALLATION
+						href: Routes.SERVICES_DESIGN_AND_INSTALLATION,
+						ariaLabel: "Design and Installation"
 					}
 				]
 			},
@@ -139,12 +143,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Price List",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Consulting pricelist"
 					},
 					{
 						key: 1,
 						text: "Learn More",
-						href: Routes.SERVICES_CONSULTING
+						href: Routes.SERVICES_CONSULTING,
+						ariaLabel: "Consulting"
 					}
 				]
 			}

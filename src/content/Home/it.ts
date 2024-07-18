@@ -91,12 +91,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Prezzi",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Servizi e Riparazioni prezzi"
 					},
 					{
 						key: 1,
 						text: "Dettagli",
-						href: Routes.SERVICES_SERVICE_AND_REPAIR
+						href: Routes.SERVICES_SERVICE_AND_REPAIR,
+						ariaLabel: "Servizi e Riparazioni"
 					}
 				]
 			},
@@ -115,12 +117,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Prezzi",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Progettazione e Installazione prezzi"
 					},
 					{
 						key: 1,
 						text: "Dettagli",
-						href: Routes.SERVICES_DESIGN_AND_INSTALLATION
+						href: Routes.SERVICES_DESIGN_AND_INSTALLATION,
+						ariaLabel: "Progettazione e Installazione"
 					}
 				]
 			},
@@ -139,12 +143,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Prezzi",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Consulenza prezzi"
 					},
 					{
 						key: 1,
 						text: "Dettagli",
-						href: Routes.SERVICES_CONSULTING
+						href: Routes.SERVICES_CONSULTING,
+						ariaLabel: "Consulenza"
 					}
 				]
 			}

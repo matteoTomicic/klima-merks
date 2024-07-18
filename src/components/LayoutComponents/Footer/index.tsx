@@ -23,6 +23,7 @@ import {
 } from "./styles";
 
 interface ISocialMediaItem {
+	ariaLabel: string;
 	href: string;
 	icon: string;
 	key: number;
@@ -81,7 +82,13 @@ function Footer({
 							const SocialMediaIcon = getReactIcon(socialMediaItem.icon);
 
 							return (
-								<SocialMediaItem href={socialMediaItem.href} key={socialMediaItem.key} rel="noreferrer" target="_blank">
+								<SocialMediaItem
+									aria-label={socialMediaItem.ariaLabel}
+									href={socialMediaItem.href}
+									key={socialMediaItem.key}
+									rel="noreferrer"
+									target="_blank"
+								>
 									<SocialMediaIcon size={24} />
 								</SocialMediaItem>
 							);

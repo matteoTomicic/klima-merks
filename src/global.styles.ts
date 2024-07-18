@@ -14,10 +14,10 @@ export const colors = {
 	gray: "#FAFAFA",
 	grayDarker: "#eaedef",
 	darkSection: "#111827",
-	primary: "#00917e",
+	primary: "#008573",
 	primaryDarker: "#0c685c",
 	text: {
-		disabled: "#989898",
+		disabled: "#757575",
 		light: "#FFFFFF",
 		primary: "#353535"
 	}

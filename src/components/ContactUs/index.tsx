@@ -37,7 +37,7 @@ function ContactUs({ contactInfos, googleMapSrc, heading, image, introText }: IC
 		<ContactUsWrapper>
 			<ImageSection>
 				<ImageWrapper>
-					<Image alt={image.alt} height={image.height} priority quality={100} src={image.src} width={image.width} />
+					<Image alt={image.alt} height={image.height} priority src={image.src} width={image.width} />
 				</ImageWrapper>
 			</ImageSection>
 			<ContactInfoSection>

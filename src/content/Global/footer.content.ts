@@ -15,12 +15,14 @@ export const footerHr = {
 		{
 			href: Constants.INSTAGRAM_URL,
 			icon: "FaInstagram",
-			key: 0
+			key: 0,
+			ariaLabel: "Instagram"
 		},
 		{
 			href: Constants.GOOGLE_URL,
 			icon: "FaGoogle",
-			key: 1
+			key: 1,
+			ariaLabel: "Google"
 		}
 	],
 	navigationCategoryTitle: "Navigacija",
@@ -106,12 +108,14 @@ export const footerEn = {
 		{
 			href: Constants.INSTAGRAM_URL,
 			icon: "FaInstagram",
-			key: 0
+			key: 0,
+			ariaLabel: "Instagram"
 		},
 		{
 			href: Constants.GOOGLE_URL,
 			icon: "FaGoogle",
-			key: 1
+			key: 1,
+			ariaLabel: "Google"
 		}
 	],
 	navigationCategoryTitle: "Navigation",
@@ -197,12 +201,14 @@ export const footerIt = {
 		{
 			href: Constants.INSTAGRAM_URL,
 			icon: "FaInstagram",
-			key: 0
+			key: 0,
+			ariaLabel: "Instagram"
 		},
 		{
 			href: Constants.GOOGLE_URL,
 			icon: "FaGoogle",
-			key: 1
+			key: 1,
+			ariaLabel: "Google"
 		}
 	],
 	navigationCategoryTitle: "Navigazione",

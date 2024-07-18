@@ -91,12 +91,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Cjenik",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Cjenik servisi i popravci"
 					},
 					{
 						key: 1,
 						text: "Saznajte više",
-						href: Routes.SERVICES_SERVICE_AND_REPAIR
+						href: Routes.SERVICES_SERVICE_AND_REPAIR,
+						ariaLabel: "Servisi i popravci"
 					}
 				]
 			},
@@ -115,12 +117,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Cjenik",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Cjenik projektiranje i montaža"
 					},
 					{
 						key: 1,
 						text: "Saznajte više",
-						href: Routes.SERVICES_DESIGN_AND_INSTALLATION
+						href: Routes.SERVICES_DESIGN_AND_INSTALLATION,
+						ariaLabel: "Projektiranje i montaža"
 					}
 				]
 			},
@@ -139,12 +143,14 @@ const content: IHomeContentTypes = {
 					{
 						key: 0,
 						text: "Cjenik",
-						href: Routes.PRICE_LIST
+						href: Routes.PRICE_LIST,
+						ariaLabel: "Cjenik savjetovanje"
 					},
 					{
 						key: 1,
 						text: "Saznajte više",
-						href: Routes.SERVICES_CONSULTING
+						href: Routes.SERVICES_CONSULTING,
+						ariaLabel: "Savjetovanje"
 					}
 				]
 			}
