@@ -21,8 +21,8 @@ function HomepageBanner({ bannerImageAltText, ctaButtonText, introText, mainHead
 				alt={bannerImageAltText}
 				fill
 				priority
-				quality={100}
-				src="/images/homepage/homepage-banner.jpg"
+				quality={50}
+				src="/images/homepage/homepage-banner.webp"
 				style={{ filter: "brightness(0.2)", objectFit: "cover", objectPosition: "right center" }}
 			/>
 			<ContainerStyled>
