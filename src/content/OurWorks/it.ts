@@ -22,7 +22,7 @@ const content: IOurWorksContentTypes = {
 		ourProjectsText:
 			"In questa pagina puoi visualizzare alcuni dei nostri progetti e lavori di riferimento. Ogni progetto dimostra il nostro impegno per la qualità, la competenza e la soddisfazione del cliente. Che si tratti di manutenzione, riparazioni o installazioni, i nostri team esperti forniscono un servizio di alto livello. Diventa anche tu uno dei nostri clienti soddisfatti – contattaci e verifica di persona la nostra qualità e competenza.",
 		bannerImage: {
-			src: "/images/our-works/about-us-banner.jpg",
+			src: "/images/our-works/about-us-banner.webp",
 			width: 600,
 			height: 399,
 			alt: "Tecnico Vaillant al lavoro"

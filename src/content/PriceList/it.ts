@@ -18,7 +18,7 @@ const content: IPriceListContentTypes = {
 	priceListBanner: {
 		heading: "Listino prezzi",
 		image: {
-			src: "/images/price-list/banner.jpg",
+			src: "/images/price-list/banner.webp",
 			alt: "Cortile con unità esterna della pompa di calore"
 		}
 	},

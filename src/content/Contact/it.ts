@@ -16,7 +16,7 @@ const content: IContactContentTypes = {
 
 	contactUs: {
 		image: {
-			src: "/images/contact/contact-us.jpg",
+			src: "/images/contact/contact-us.webp",
 			alt: "",
 			width: 1299,
 			height: 1075

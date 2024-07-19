@@ -17,7 +17,7 @@ const content: IPriceListContentTypes = {
 	priceListBanner: {
 		heading: "Price List",
 		image: {
-			src: "/images/price-list/banner.jpg",
+			src: "/images/price-list/banner.webp",
 			alt: "Yard with an outdoor heat pump unit"
 		}
 	},

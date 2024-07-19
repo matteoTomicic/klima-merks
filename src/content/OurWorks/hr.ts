@@ -22,7 +22,7 @@ const content: IOurWorksContentTypes = {
 		ourProjectsText:
 			"Na ovoj stranici možete pregledati neke od naših referentnih projekata i radova. Svaki projekt prikazuje našu posvećenost kvaliteti, stručnosti i zadovoljstvu klijenata. Bilo da se radi o održavanju, popravcima ili instalacijama, naši iskusni timovi pružaju vrhunsku uslugu. Budite i Vi jedan od naših zadovoljnih klijenata – kontaktirajte nas i uvjerite se u našu kvalitetu i stručnost.",
 		bannerImage: {
-			src: "/images/our-works/about-us-banner.jpg",
+			src: "/images/our-works/about-us-banner.webp",
 			width: 600,
 			height: 399,
 			alt: "Vaillantov serviser obavlja svoj posao"

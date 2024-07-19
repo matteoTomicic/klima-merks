@@ -22,7 +22,7 @@ const content: IOurWorksContentTypes = {
 		ourProjectsText:
 			"On this page, you can view some of our reference projects and works. Each project showcases our commitment to quality, expertise, and client satisfaction. Whether it is maintenance, repairs, or installations, our experienced teams provide top-notch service. Be one of our satisfied clients – contact us and see for yourself our quality and expertise.",
 		bannerImage: {
-			src: "/images/our-works/about-us-banner.jpg",
+			src: "/images/our-works/about-us-banner.webp",
 			width: 600,
 			height: 399,
 			alt: "Vaillant technician doing his job"

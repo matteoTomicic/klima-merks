@@ -14,7 +14,7 @@ export function PriceListBanner({ heading, image }: IPriceListBanner) {
 		<Section style={{ padding: "0", position: "relative" }}>
 			<StyledContainer>
 				<H1>{heading}</H1>
-				<Image alt={image.alt} fill priority src={image.src} />
+				<Image alt={image.alt} fill priority quality={50} src={image.src} />
 			</StyledContainer>
 		</Section>
 	);

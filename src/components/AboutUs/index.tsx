@@ -24,6 +24,7 @@ function AboutUs({ aboutUsText, bannerImage, heading, ourProjectsText, ourServic
 								alt={bannerImage.alt}
 								height={bannerImage.height}
 								priority
+								quality={50}
 								src={bannerImage.src}
 								width={bannerImage.width}
 							/>

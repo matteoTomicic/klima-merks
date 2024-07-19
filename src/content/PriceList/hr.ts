@@ -17,7 +17,7 @@ const content: IPriceListContentTypes = {
 	priceListBanner: {
 		heading: "Cjenik",
 		image: {
-			src: "/images/price-list/banner.jpg",
+			src: "/images/price-list/banner.webp",
 			alt: "Dvorište sa vanjskom jedinicom dizalice topline"
 		}
 	},
